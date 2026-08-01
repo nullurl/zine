@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vellum Editorial Zine"
+  short_description: "Create translucent layered editorial paper posters"
+  default_prompt: "Use $vellum-editorial-zine to turn this theme into a finished translucent editorial paper composition."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Green Reverie Collage Zine"
+  short_description: "Create dreamy green nature and memory collage zines"
+  default_prompt: "Use $green-reverie-collage-zine to turn this place, memory, or mood into a finished dreamy green collage zine image."

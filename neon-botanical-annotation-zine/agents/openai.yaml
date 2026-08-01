@@ -1,0 +1,4 @@
+interface:
+  display_name: "Neon Botanical Annotation Zine"
+  short_description: "Create dark botanical photo zines with neon annotations"
+  default_prompt: "Use $neon-botanical-annotation-zine to turn this plant, place, or mood into a finished annotated botanical photo zine image."

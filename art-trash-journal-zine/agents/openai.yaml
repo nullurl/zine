@@ -1,0 +1,4 @@
+interface:
+  display_name: "Art Trash Journal Zine"
+  short_description: "Create tactile art-trash junk-journal collage images"
+  default_prompt: "Use $art-trash-journal-zine to turn this theme into a finished tactile art-trash journal image."

@@ -1,0 +1,14 @@
+interface:
+  display_name: "Soft Focus Memory Album"
+  short_description: "Create cinematic blurred-background photo memory collages"
+  default_prompt: "Use $soft-focus-memory-album to turn this memory into a soft-focus photo album collage."
+image_generation:
+  implementation: "scripts/server_image_gen.py"
+  provider: "OpenAI"
+  base_url: "https://api.pptoken.org/v1"
+  wire_api: "images"
+  default_image_model: "gpt-image-2"
+  default_size: "1536x864"
+  response_format: "b64_json"
+  api_key_env: "OPENAI_API_KEY"
+  stores_api_key: false

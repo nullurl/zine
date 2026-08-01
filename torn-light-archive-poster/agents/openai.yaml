@@ -1,0 +1,14 @@
+interface:
+  display_name: "Torn Light Archive Poster"
+  short_description: "Torn-photo archival paper collage posters"
+  default_prompt: "Use $torn-light-archive-poster to create a torn-paper archival light collage poster about a quiet winter city."
+image_generation:
+  implementation: "scripts/server_image_gen.py"
+  provider: "OpenAI"
+  base_url: "https://api.pptoken.org/v1"
+  wire_api: "images"
+  response_format: "b64_json"
+  response_model: "gpt-5.5"
+  default_image_model: "gpt-image-2"
+  api_key_env: "OPENAI_API_KEY"
+  stores_api_key: false

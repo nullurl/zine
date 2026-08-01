@@ -1,0 +1,4 @@
+interface:
+  display_name: "Botanical Scrapbook Zine"
+  short_description: "Create sunlit botanical paper-diary collages"
+  default_prompt: "Use $botanical-scrapbook-zine to turn this theme into a finished vertical botanical scrapbook image."

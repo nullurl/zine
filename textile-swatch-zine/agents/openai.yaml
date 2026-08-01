@@ -1,0 +1,4 @@
+interface:
+  display_name: "Textile Swatch Zine"
+  short_description: "Create tactile textile and material swatch boards"
+  default_prompt: "Use $textile-swatch-zine to turn this material theme into a finished tactile swatch-board image."

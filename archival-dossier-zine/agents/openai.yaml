@@ -1,0 +1,13 @@
+interface:
+  display_name: "Archival Dossier Zine"
+  short_description: "Create tactile archival dossier and field-notebook images"
+  default_prompt: "Use $archival-dossier-zine to turn this theme into a tactile archival dossier image."
+image_generation:
+  implementation: "scripts/server_image_gen.py"
+  provider: "OpenAI"
+  base_url: "https://api.pptoken.org/v1"
+  wire_api: "images"
+  default_image_model: "gpt-image-2"
+  response_format: "b64_json"
+  api_key_env: "OPENAI_API_KEY"
+  stores_api_key: false
