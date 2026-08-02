@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vertical Poetry Strip Zine"
+  short_description: "Sparse vertical handwritten poetry strips"
+  default_prompt: "Use $vertical-poetry-strip-zine to turn a short phrase, feeling, or memory into a sparse vertical handwritten paper-strip poster with huge blank wall space and generate the image."

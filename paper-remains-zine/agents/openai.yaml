@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Remains Zine"
+  short_description: "Sparse torn-paper relic posters"
+  default_prompt: "Use $paper-remains-zine to turn this theme or reference image into a sparse torn-paper relic poster and generate the image."

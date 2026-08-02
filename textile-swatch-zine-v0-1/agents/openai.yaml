@@ -1,0 +1,4 @@
+interface:
+  display_name: "Textile Swatch Zine v0.1"
+  short_description: "Original tactile textile swatch boards"
+  default_prompt: "Use $textile-swatch-zine-v0-1 to turn this material theme into a finished tactile swatch-board image with one controlled color accent."

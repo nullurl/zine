@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shadow Lotus Assemblage Zine"
+  short_description: "Dark devotional lotus collage posters"
+  default_prompt: "Use $shadow-lotus-assemblage-zine to turn a theme, phrase, or reference image into a dark layered Buddha-and-lotus collage poster and generate the image."

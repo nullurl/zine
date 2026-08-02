@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gilded Ripple Poetry Zine"
+  short_description: "Vintage water poetry poster zines"
+  default_prompt: "Use $gilded-ripple-poetry-zine to turn a water, coast, river, or poetic theme into a vintage ornamental poster and generate the image."

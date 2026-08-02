@@ -1,21 +1,23 @@
 ---
 name: textile-swatch-zine
-description: Generate prompts and finished raster images for tactile textile and material swatch zines, fabric sample boards, yarn studies, paper or leather archives, dye tests, woven structure ledgers, and quiet bespoke material dossiers. Use when the user provides a theme, place, season, product-free material direction, reference image, or mood and wants a vertical fibrous-paper composition with a 2x3 or 3x2 grid of translucent frosted sample cards, real textile swatches, tiny labels, generous blank space, soft scan lighting, and one controlled color accent.
+description: Generate prompts and finished raster images for tactile textile and material swatch zines, fabric sample boards, yarn studies, paper or leather archives, dye tests, woven structure ledgers, and quiet bespoke material dossiers. Use when the user provides a theme, place, season, product-free material direction, reference image, or mood and wants a vertical fibrous-paper composition with a 2x3 or 3x2 grid of translucent frosted sample cards, real textile swatches, tiny labels, generous blank space, soft scan lighting, one controlled color accent, or explicit preservation of a reference image's original color palette.
 ---
 
-# Textile Swatch Zine
+# Textile Swatch Zine v0.2
 
 Turn the user's theme, material brief, mood, or reference set into:
 
 1. a final image-generation prompt, and
 2. a finished portrait raster swatch-board image.
 
-Fuse Minimal Zine negative-space discipline with a bespoke material archive: textile samples, yarn cards, paper chips, leather or dye swatches, small index type, and shallow physical depth.
+Fuse Minimal Zine negative-space discipline with a bespoke material archive: textile samples, yarn cards, paper chips, leather or dye swatches, small index type, shallow physical depth, and explicit reference-image color preservation.
 
 ## Reference Routing
 
 - Treat supplied images as visual-grammar or subject references unless the user explicitly requests a literal edit.
 - Analyze local references locally: extract paper tone, grid rhythm, card translucency, material types, tactile edges, shadow depth, type scale, blank-space share, and accent color.
+- If the user asks to preserve color, treat the reference palette as a core material signal rather than neutralizing it.
+- For color-preserving requests, keep the dominant hues visible in at least one swatch card or thread/dye chip.
 - Do not reproduce visible brands, logos, supplier names, product SKUs, personal identifiers, watermarks, or distinctive copied text from references.
 - Do not upload private local references to an untrusted third-party endpoint. The bundled server fallback is text-only.
 - Read references/style-grammar.md when reverse-engineering a reference or correcting style drift.
@@ -33,6 +35,7 @@ Preserve these signals:
 - Slightly rounded card corners, shallow shadows, matte surface, flat scanned or overhead product-archive view.
 - Tiny modern sans, typewriter, or sample-index typography; no long paragraphs.
 - One controlled high-chroma or medium-chroma accent, usually inside one swatch or a small printed mark.
+- If the user wants the source image's color preserved, let that palette dominate one or more cards instead of reducing it to a tiny accent.
 - Calm material-library mood: bespoke sample book, studio archive, fabric ledger, not retail catalog.
 
 ## Fusion With Minimal Zine
@@ -43,7 +46,7 @@ Carry forward:
 - generous negative space
 - one restrained attention system
 - short text with typographic materiality
-- one chromatic anchor
+- one chromatic anchor, or a preserved source palette when the user requests color retention
 - old paper fiber, print softness, scan noise, and low-to-medium contrast
 
 Change the object logic:
@@ -52,6 +55,7 @@ Change the object logic:
 - Let texture and sample thickness carry the image, not photography or illustration.
 - Use frosted translucent cards instead of scrapbook ephemera or vellum portfolio sheets.
 - Keep labels tiny and archival; do not make a commercial headline or UI card grid.
+- For color-preserving reference images, keep the source hues legible and continuous rather than flattening them to beige or grayscale.
 
 ## Layout Engine
 
@@ -63,6 +67,7 @@ Choose one family before compiling:
 - thread-route: yarn tails, thread strands, or stitched lines create a subtle reading path between sample cards.
 - dye-study: one fabric or paper material repeated in three to five tonal swatches with one vivid dye accent.
 - construction-grid: different weave, knit, pile, and satin structures from the same palette in a precise grid.
+- color-preserved-reference: one or two cards hold the reference image's dominant hues while the rest echo them in lighter, darker, or neutral support tones.
 
 Use one family only. Do not combine every sample type, thread route, dye chart, and hero panel in one image.
 
@@ -75,6 +80,7 @@ Translate the user's theme into a coherent material set:
 - mood: use texture contrast such as matte/shine, fuzzy/smooth, dense/open weave.
 - product or brand idea: abstract into material language; avoid logos, packaging, and advertising.
 - abstract phrase: convert into a material archive title plus three to five touchable samples.
+- image reference: preserve dominant colors first, then translate them into matching textile, paper, or thread materials.
 
 Keep every sample touchable and specific. Mention edges, pile, ribs, weave, folds, thread tails, lifted corners, embossing, or subtle fray.
 
@@ -96,8 +102,28 @@ Start from paper neutrals: ivory, warm gray, oatmeal, cool pale gray, charcoal, 
 - cobalt ink label or tiny thread for minimal-zine energy
 - saffron, lemon, or marigold fiber for warm-season memory
 - black wool, graphite paper, or ink for high-contrast material study
+- preserved reference palette: when the user supplies an image with clear color, keep that color family visible as the main system instead of demoting it to a tiny accent.
 
 The accent should occupy about 1%-8% of the page or one clear sample cell. Avoid rainbow palettes, retail color fans, and uniformly beige/brown boards unless explicitly requested.
+
+## Color Trend Enhancement
+
+Use this only when the user asks for brighter color, richer color, preserved source color, a named palette mood, or when the draft would otherwise become too gray, beige, dark, or flat. Preserve this skill's layout grammar first; color is an enhancement layer, not a replacement for structure.
+
+Pick one dominant palette and optionally one small adjacent accent. Assign colors to visible roles such as paper field, photo grade, ink, label, material, shadow, highlight, or motion accent. Do not combine more than two palettes unless the user explicitly asks for chaotic or maximal color.
+
+- forest green: #92AD76, #B6CCAA, #E3EBDD, #71906A, #435F45. Use for botanical, tropical, moss, spring, garden, healing, or green-reverie briefs.
+- purple luxury: #7B5FA4, #A487C6, #D8C9EE, #9A8AB6, #5B376D. Use for dreamy, ritual, night floral, velvet, memory, or quiet-luxury briefs.
+- vintage mocha: #885949, #C87949, #E6BC8C, #D9D2C8, #203A35. Use for cafe, archive, editorial, old-photo, paper, or warm city briefs.
+- earth warm brown: #A5673D, #C89A6B, #E8D6C3, #7B5A42, #3D2C22. Use for handmade, soil, leather, textile, relic, desert, or autumn briefs.
+- deep sea blue: #0F2E48, #1E4F73, #5C87B2, #AFC5DA, #E6F0F8. Use for ocean, rain, night water, cloud-sea, distance, or cinematic calm.
+- mist blue gray: #9FB0C3, #C9D3DF, #EEF2F6, #75879A, #31485D. Use for rain, fog, glass, winter, quiet architecture, or analytical moods.
+- sunset orange: #FF9A42, #FFC185, #FFE9D3, #C66A31, #7B3D1E. Use for warm light, cafe lamps, islands, evening, energy, or celebratory accents.
+- cream soft pink: #F6D7DE, #FBE9EE, #FFF7F8, #E9C6D1, #C39BAA. Use for bright journaling, tender memory, blossoms, soft albums, or feminine notes.
+- sea-salt blue: #A8D8EA, #D8EDF5, #F8FCFD, #7FB8CF, #5A8097. Use for airy coastal, island, pool, travel, summer, or brighter-water requests.
+- desert elegant white: #F7F4EE, #E7DED1, #D1C6B8, #A99F91, #736F66. Use as a clean bright base when the image needs lift without saturation.
+
+When brightening a dark output, increase paper/background luminance with desert elegant white, sea-salt blue, or cream soft pink before increasing saturation. When preserving a reference image, keep its main hues first, then harmonize them with the closest palette above.
 
 ## Prompt Compiler
 
@@ -105,7 +131,7 @@ Write the final prompt as five compact paragraphs:
 
 1. Canvas, paper surface, portrait ratio, negative-space share, scan or overhead lighting.
 2. Layout family, grid position, card count, translucent/frosted card behavior, blank-space placement.
-3. Material samples: exact fibers, textures, edges, thickness, thread tails, folds, and one accent sample.
+3. Material samples: exact fibers, textures, edges, thickness, thread tails, folds, and one accent sample, or a preserved reference palette when color retention is requested.
 4. Typography: exact short title, tiny labels, index marks, font voice, and text limits.
 5. Texture, mood, physical depth, and hard avoids: no brands, UI, retail catalog, glossy mockup, clutter, or long text.
 
@@ -126,6 +152,7 @@ Compile only visible renderable details. Never mention source paths, reverse-eng
 - The fallback reads provider configuration and OPENAI_API_KEY from the environment or Codex config, calls the OpenAI-compatible image endpoint, requests b64_json, and writes the decoded image locally. Never print or hard-code secrets.
 - Store the exact final prompt beside the image. Never overwrite existing outputs; use a new descriptive slug.
 - Inspect once. Regenerate with one targeted correction if the swatches look flat and fake, the cards become UI panels, the material texture is not visible, the page is too dark, the label text dominates, or the result becomes a retail catalog.
+- If the user asked to preserve color and the palette collapses to neutral tones, regenerate once with stronger color-preservation language and a larger colored swatch area.
 
 ## Hard Avoids
 

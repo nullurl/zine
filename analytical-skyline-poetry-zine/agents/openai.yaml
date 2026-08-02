@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analytical Skyline Poetry Zine"
+  short_description: "Sparse analytical poem diagrams"
+  default_prompt: "Use $analytical-skyline-poetry-zine to turn a short phrase, thought, or memory into a sparse analytical diagram poster with a poetic note, thin axes, and one accent color, then generate the image."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Photo Trace Poetry Zine"
+  short_description: "Dual photo and line-trace poetry posters"
+  default_prompt: "Use $photo-trace-poetry-zine to turn this theme or reference photo into a dual-panel photo and line-trace poetry poster."

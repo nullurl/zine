@@ -1,0 +1,4 @@
+interface:
+  display_name: "Telos Editorial Zine"
+  short_description: "Sparse monochrome editorial zine posters"
+  default_prompt: "Use $telos-editorial-zine to turn this theme into a sparse monochrome editorial zine poster and generate the image."

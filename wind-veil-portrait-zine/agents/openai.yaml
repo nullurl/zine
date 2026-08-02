@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wind Veil Portrait Zine"
+  short_description: "Wind-swept cinematic portrait, wuxia, and battle key visual posters"
+  default_prompt: "Use $wind-veil-portrait-zine to turn a portrait brief or reference image into a wind-swept cinematic portrait, wuxia, or battle key visual poster and generate the image."

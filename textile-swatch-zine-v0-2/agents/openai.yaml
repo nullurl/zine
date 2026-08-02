@@ -1,0 +1,4 @@
+interface:
+  display_name: "Textile Swatch Zine v0.2"
+  short_description: "Create tactile textile swatch boards with preserved color"
+  default_prompt: "Use $textile-swatch-zine-v0-2 to turn this material theme or reference image into a finished tactile swatch-board image, preserving source color when requested."

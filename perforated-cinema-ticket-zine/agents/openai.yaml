@@ -1,0 +1,4 @@
+interface:
+  display_name: "Perforated Cinema Ticket Zine"
+  short_description: "Monochrome ticket-stub film posters"
+  default_prompt: "Use $perforated-cinema-ticket-zine to turn a film, play, or dramatic theme into a perforated black-and-white ticket poster with an optional repeat strip and generate the image."
