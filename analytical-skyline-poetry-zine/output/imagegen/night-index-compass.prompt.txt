@@ -1,0 +1,9 @@
+Vertical portrait 3:4 frame on pale ivory paper, 85% of the canvas is quiet empty paper, flat scan reproduction, subtle paper tooth and faint ink ghosting.
+
+Layout family: central-axis. One small analytical cluster near center: a hand-drawn compass rose with concentric thin circles, one tiny star-map fragment with three plotted points connected by fine dashed lines, and short coordinate labels along the vertical axis. Anchor occupies about 10% of the page, delicate hairline strokes with slight wobble.
+
+Typography: a small Chinese poetic note "北辰指路" in monospaced letters beneath the diagram, a tiny English label "CHART 12 · NIGHT INDEX", and a small numeral "12" tucked near the lower edge. One precise accent: ultramarine blue used only for the plotted points and their dashed connector lines.
+
+Texture: warm paper fibers, mild photocopy wear, soft registration drift, low-contrast blue-grey ink on aged stock. Mood: analytical, poetic, archival, quiet, speculative.
+
+Hard avoids: no infographic overload, no dashboard, no multiple accent colors, no glossy mockup, no dense text, no UI or card styling.

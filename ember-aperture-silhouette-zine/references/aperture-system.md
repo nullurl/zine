@@ -17,7 +17,8 @@ The primary contour must remain readable at thumbnail size. Detached echoes cann
 - dark leaves create the side walls
 - thin branches cross only the upper 10%-25% of the opening
 - lower edge stays wide enough for a horizon and figures
-- suitable for home, family, summer, water, and memory
+- optional dappled tree shadows (树影斑驳) break the surrounding black field when enrichment is requested
+- suitable for home, family, summer, water, sea, and memory
 
 ### Cave Mouth
 
@@ -72,9 +73,11 @@ The primary contour must remain readable at thumbnail size. Detached echoes cann
 Use no more than:
 
 - one celestial sign
-- one distant landform
-- one middle-ground surface
-- one foreground relationship
+- one distant landform (may be an island or headland)
+- one middle-ground surface (for sea briefs: layered waves with carved foam crests, a small boat or sailboat, wet-sand reflections)
+- one foreground relationship (varied two-figure poses, or a pair plus a small boat/rock/shells)
 - one tiny title
 
 Remove elements in this order when crowded: title, celestial sign, secondary figure, extra terrain. Preserve the aperture and one relationship.
+
+When the brief asks for a richer sea display, the budget may expand by one sea element (boat, headland, or shells) as long as the aperture stays the single anchor; use woodcut linework to keep the added elements from crowding the composition.

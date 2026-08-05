@@ -5,9 +5,11 @@ description: Generate prompts and finished raster images for dark negative-space
 
 # Ember Aperture Silhouette Zine
 
-Turn the user's content into both a final image-generation prompt and a finished raster image. The signature artifact is a tall matte-black paper poster in which 75%-88% of the page remains dark. One irregular opening reveals a warm, limited-color memory scene rendered like screenprint, woodcut, ink drawing, or aged animation background. Human figures appear as small silhouettes inside the opening.
+Turn the user's content into both a final image-generation prompt and a finished raster image. The signature artifact is a tall matte-black paper poster whose dark field typically holds 55%-88% of the page. One irregular opening reveals a warm, limited-color memory scene rendered like screenprint, woodcut, ink drawing, or aged animation background. Human figures appear as small silhouettes inside the opening.
 
-This Skill reverses the light/dark relationship of `gc-minimal-zine-poster-v0-1` while retaining its attention geometry, single visual anchor, restrained color, sparse typography, print defects, and quiet editorial temperature. The original tiny high-chroma paper anchor becomes one substantial warm aperture surrounded by a much larger black field.
+Two enrichment layers are available and should be used liberally when the brief calls for richer display: **sea-and-dapple** (more ocean elements plus dappled tree shadows breaking the dark field) and **woodcut enhancement** (carved linework and print texture used to enrich the scene). These layers intentionally relax the default charcoal-heavy look.
+
+This Skill reverses the light/dark relationship of `gc-minimal-zine-poster-v0-1` while retaining its attention geometry, single visual anchor, restrained color, sparse typography, print defects, and quiet editorial temperature. The original tiny high-chroma paper anchor becomes one substantial warm aperture surrounded by a large black field.
 
 ## Mode Policy
 
@@ -28,11 +30,12 @@ State:
 
 - vertical 2:3, 3:5, or 9:16 matte paper poster
 - full-frame charcoal-black, blue-black, or soot-black ink field
-- 75%-88% dark negative space with subtle paper fibers and uneven ink density
-- one central or lower-middle opening occupying approximately 12%-28% of the page
+- dark negative space normally 55%-88%; when the user asks for richer display, more sea, dappled shadows, or woodcut detail, reduce darkness to about 55%-65% and open more of the page to the scene
+- one central or lower-middle opening occupying approximately 12%-35% of the page; widen toward 30%-35% when the scene carries more sea elements or woodcut detail
+- optional dappled tree shadows (树影斑驳) breaking the black field onto the surrounding paper
 - flat scanned print, no frame, no mockup, no glossy depth
 
-The black field must read as printed matter or a physical foreground mass, not as an empty digital gradient.
+The black field must read as printed matter or a physical foreground mass, not as an empty digital gradient. When the brief asks for a lighter, more open composition, the field may drop toward 55% while keeping enough darkness to frame the aperture.
 
 ### 2. Aperture geometry
 
@@ -69,7 +72,30 @@ Use one warm anchor family inside the aperture:
 - lemon dusk + vermilion + charcoal violet
 - user-selected single high-chroma hue with two quieter tonal steps
 
-The aperture is the one high-chroma anchor and may occupy 12%-28% of the page because it replaces the original Minimal Zine cluster. Keep the surrounding ink and figures nearly black. Use 3-5 flat printed inks, visible halftone, woodcut or screenprint contour, slight misregistration, faded edge, paper grain, and low-to-medium contrast outside the aperture. No global orange wash.
+The aperture is the one high-chroma anchor and may occupy 12%-35% of the page because it replaces the original Minimal Zine cluster. Keep the surrounding ink and figures nearly black. Use 3-5 flat printed inks, visible halftone, woodcut or screenprint contour, slight misregistration, faded edge, paper grain, and low-to-medium contrast outside the aperture. No global orange wash.
+
+### 4b. Sea-and-dapple enrichment layer
+
+When the user asks for more sea elements, tree shadows, or a richer display, add:
+
+- layered rolling waves with carved white foam crests, a distant island or headland, a small boat or sailboat on the horizon, wet-sand reflections, and scattered shells or rocks in the foreground
+- dappled tree shadows (树影斑驳) drifting across the surrounding black paper, plus leaf-light flecks breaking through the aperture edge
+- widened opening (about 30%-35% of the page) so the ocean scene has room to breathe
+- reduced dark share (about 55%-65%) so the scene, not the darkness, leads the composition
+
+Keep the interior warm palette isolated; the extra sea elements stay inside the aperture and its immediate shadows.
+
+### 4c. Woodcut enhancement layer
+
+When the user asks for richer display or more print craft, add:
+
+- strong carved linework on waves, leaves, rocks, and roof lines (visible knife strokes and grain)
+- woodcut textures replacing smooth fills inside the aperture
+- 4-5 flat inks with visible halftone and slightly rougher registration
+- carved leaf shapes and branch lines on the aperture edge, not just smooth silhouettes
+- dappled texture (tree shadows, mottled ink) across the black field to add print depth
+
+This layer deliberately trades some of the quiet charcoal minimalism for tactile print richness; it is the recommended enhancement when the default look feels too dark or too sparse.
 
 ### 5. Typography and avoid-list
 
@@ -87,13 +113,26 @@ Typography is optional and tiny: one short title of 2-8 characters or words, wid
 
 ## Memory Scene Families
 
-- `shoreline-bond`: figures holding hands before water and a distant island
+- `shoreline-bond`: figures together before layered sea — rolling waves with foam crests, distant island, wet-sand reflections; expressive poses such as one figure kneeling to touch the water while the other stands behind with an arm raised
 - `lone-return`: one figure facing a road, house light, or mountain pass
 - `home-at-dusk`: roof line, courtyard, window light, and one waiting figure
-- `moon-over-water`: crescent, horizontal water marks, distant ridge, quiet silhouettes
+- `moon-over-water`: crescent, horizontal water marks, distant ridge, quiet silhouettes; add a small boat, rocky headland, or moon-path reflections when the brief asks for more sea
 - `field-passage`: layered fields, narrow road, bicycle, animal, or walking pair
 - `empty-afterimage`: no people, only bench, clothing, footprints, or lit doorway
 - `object-memory`: one meaningful object enlarged inside the aperture with a tiny horizon
+
+## Figure Pose Guidance
+
+Human silhouettes stay anonymous, but their poses should carry the emotion. When two figures are present, vary the pose so the pair reads as a living moment rather than two identical standing shapes:
+
+- one kneels or crouches (touching water, picking something up, tying a shoe) while the other stands or walks
+- one leads, the other follows at a small distance
+- one raises an arm (waving, pointing at the sky or sea) while the other rests
+- one walks into the water with a hand trailing through the surf while the other turns back
+- one sits on a rock or bench, the other leans or stands close
+- a hand-holding pair with one stepping forward, the other half-turned
+
+Use gesture and spacing, not faces or costume detail, to make the relationship legible. When the user says poses feel too few or too static, increase pose variety explicitly in the prompt.
 
 ## Attention Geometry
 
@@ -176,6 +215,8 @@ Always avoid:
 - dense scrapbook, decorative stickers, multiple unrelated scenes, or too many accent colors
 - copied signatures, watermarks, artist names, source captions, and long pseudo-readable text
 
+When the brief asks for a richer or lighter composition (more sea, dappled shadows, woodcut detail, more pose variety), the 55%-88% dark range, 12%-35% aperture range, and the enrichment layers in 4b/4c override the default minimal look; the negative constraints above still apply.
+
 ## Fallback Script
 
 The fallback reads the OpenAI-compatible provider from Codex configuration or environment variables and never stores credentials in the Skill.
@@ -212,13 +253,14 @@ Use `--dry-run` to inspect the request without sending it. The default is the Im
 
 Before finalizing, check:
 
-- Does the poster remain 75%-88% charcoal-black field?
+- Does the poster keep a charcoal-black field, normally 55%-88% (toward 55%-65% when the brief asks for richer sea/dapple/woodcut display)?
 - Is there exactly one dominant irregular aperture by default?
-- Does the aperture occupy approximately 12%-28% of the page?
+- Does the aperture occupy approximately 12%-35% of the page (wider toward 30%-35% when enriched)?
 - Are the edge material and opening silhouette physically legible?
 - Is the interior scene layered simply enough to read at thumbnail size?
-- Are human figures small, anonymous, and relational rather than heroic?
+- Are human figures small, anonymous, and relational rather than heroic, with varied poses when two figures appear?
 - Is warm color isolated inside the aperture with no global orange wash?
+- If the brief asks for richer display: are sea elements (waves, boat, island, reflections), dappled tree shadows, or woodcut texture present?
 - Does the surface read as screenprint, woodcut, ink, or aged print rather than glossy digital art?
 - Is typography tiny, sparse, and free of copied source text?
 - Did the output avoid horror, generic cinema advertising, CGI, random grunge, and full-bleed sunset?

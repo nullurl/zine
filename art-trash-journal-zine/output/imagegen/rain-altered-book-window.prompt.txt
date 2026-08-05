@@ -1,0 +1,11 @@
+Portrait 3:4 frame on a base of old newsprint and torn book pages photographed from above; about 50% of the canvas is aged paper with visible type columns; flat scan light, dusty print ink.
+
+Layout family: altered-book-window. An old book or newspaper page has a torn window cut into it, revealing a miniature scene built from waste materials behind the opening; window sits upper-center, irregular torn edges, clear paper around.
+
+Reclaimed material anchor: inside the torn window a tiny rainy-street diorama made of bent cardboard, cobalt-painted paper scraps, a small tarnished foil roof, a matchstick lamppost, a scrap-paper figure, and a puddle of glue shine; outside the window, torn magazine scraps and thread tails are glued around the frame.
+
+Typography: one short marker title "RAIN" scribbled at the bottom, a type fragment "the city" half-visible on the newsprint, and a tiny handwritten date mark; all text brief and imperfect.
+
+Color: smoke-gray newsprint base, cobalt paint dominant inside the diorama (about 18% of page), tarnished foil as the accent (~3%), milky glue shine, dust, bent paper corners, shallow shadows, low-contrast handmade reproduction.
+
+Mood and avoids: urban rainy handmade page, not a polished scene, no brands, no UI, no retail craft styling, no glossy render, no full-bleed painting, no long readable text.
