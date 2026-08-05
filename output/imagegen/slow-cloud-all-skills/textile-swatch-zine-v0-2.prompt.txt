@@ -1,0 +1,7 @@
+Portrait tactile swatch board with explicit source-palette preservation. Translate the reference image into material cards that visibly keep the deep sky blue, cloud white, building-gold, and cool gray relationships instead of neutralizing them.
+
+Reserve one or two frosted cards for the dominant sky hues, and let the remaining cards echo them in lighter or darker support tones. Use the quote {QUOTE} as a tiny label or palette note rather than a headline.
+
+Title can be 云色保存 or reference palette, with tiny index type and one small accent cell. Keep the visible palette continuous and legible.
+
+Matte overhead product-archive view, shallow relief, and no retail catalog feel; avoid muddy beige collapse or rainbow treatment.

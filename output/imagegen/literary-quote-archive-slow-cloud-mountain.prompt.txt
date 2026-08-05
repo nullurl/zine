@@ -1,0 +1,19 @@
+Use case: stylized-concept
+Asset type: finished vertical literary quote archive poster
+Primary request: Create an unattributed literary archive poster for the exact Chinese sentence “云走得很慢，像在等待一座山想起自己。” Do not add an author name, signature, quotation source, logo, or watermark.
+
+Tall vertical 3:5 editorial poster on full-frame warm aged ivory paper, approximately 75% calm paper field. The paper has subtle fibers, faint stains, soft edge wear, xerox softness, matte scan variation, and low-contrast print grain. No border, device mockup, rounded card, drop shadow, clean digital white, or glossy depth.
+
+Upper-left editorial scaffold: a small opaque cobalt-blue square containing the exact index “01”, tiny uppercase text “LITERARY NOTES” to its right, and a thin black corner rule. Below it, set the single large dark high-contrast serif display word “CLOUD”. Slightly overlap beneath it with the oversized italic hairline outline word “REMEMBER” in cobalt blue. Upper-right contains only tiny uppercase metadata “WORDS / IMAGE / SILENCE” and “ARCHIVE EDITION”. There is no author field and no attribution line anywhere.
+
+Place the exact Chinese quote in the upper-left to left-middle column using a refined literary Chinese serif or Song-style typeface, with generous line spacing and these exact three lines only:
+“云走得很慢，
+像在等待一座山
+想起自己。”
+Use dark charcoal for the first two lines and fully saturated cobalt blue only for the exact final line “想起自己。” Add one simple cobalt quotation mark before the quote. Preserve the Chinese characters, punctuation, and line breaks exactly. Do not generate any other Chinese text.
+
+Lower-right and lower-center visual anchor occupying only 20%-25% of the canvas: an irregular torn-paper grayscale mountain landscape with a tiny isolated ridge and broad atmospheric sky. A soft photocopied white cloud moves slowly toward the mountain, partly crossing a translucent cobalt-blue paper rectangle. Add two or three very thin dotted orbital curves and one small blue registration point to suggest waiting and memory. Use torn edges, halftone, low-contrast grayscale, paper fibers, faded emulsion, subtle ink bleed, and slight print misregistration. The image is a quiet symbolic counter-image, not a full-bleed realistic scene.
+
+Color logic: paper cream, charcoal and grayscale support one cobalt-blue high-chroma anchor. Cobalt appears only in the index square, “REMEMBER” outline, final quote line, one translucent rectangle, and one tiny registration point; total saturated blue remains restrained but clearly visible at thumbnail size. Footer contains only tiny uppercase “SELECTED WORDS / ARCHIVE 01”, a short cobalt rule, the page mark “01/01”, and a thin corner bracket. No author, no source attribution, no date, no signature.
+
+Avoid social-media quote card, motivational template, generic book cover, corporate presentation, centered quote layout, full-bleed photography, glossy magazine design, busy scrapbook, decorative tape or stickers, more than one accent hue, invented author attribution, copied reference names or quotes, garbled extra Chinese, long pseudo-readable text, logos, watermarks, signatures, neon, HDR, purple cinematic grading, teal-orange grading, CGI, 3D, hard shadows, and commercial advertising hierarchy.

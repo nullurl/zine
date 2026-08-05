@@ -1,0 +1,11 @@
+Portrait 2:3 dark botanical photograph of a tropical staghorn fern in a shaded greenhouse corner, low dusk-like exposure, deep green and black negative space around the plant, soft handheld film grain, slight scan/screen softness, no paper collage and no polished studio macro.
+
+Plant anchor: one large real photographic staghorn fern mounted on rough bark, antler-shaped fronds spreading from the lower-left toward the upper-right, natural matte green surface with a few pale fuzzy spores and brown shield fronds, sharp enough to read the fern silhouette while the background recedes into dark tropical foliage.
+
+Framed-specimen overlay system: one thin off-white rectangular frame partially surrounds the main fern cluster, a smaller inset callout square magnifies one antler-like frond tip, two delicate white leader lines point from the label area to the fern, seven small cyan squares form a loose diagonal route through the dark space, and two magenta numbered circles mark "1" and "2" without covering the plant center; composited like early-digital zine annotations, not a functional UI.
+
+Typography: title "Staghorn Fern" in small italic script near the upper-right leader line, one tiny monospaced note "tropical field note" under it, and a small parenthetical "(humid shade)" near the lower frame edge; keep all text short, original, and lightly imperfect, no long copy, no copied reference captions, no brand names.
+
+Palette and texture: dark fern green, black shadow, muted bark brown, cyan annotation marks and magenta number circles as the only neon accents, thin off-white frame lines, very restrained glow, subtle halftone softness on one cyan square, slight overlay misregistration, film grain, low-to-medium contrast, no heavy cyberpunk lighting.
+
+Mood and constraints: quiet tropical plant zine, botanical diary at night, scientific but poetic; avoid clean app UI, social template, polished scrapbook, paper stickers, full vector plant illustration, product ad, excessive neon, rainbow decorations, emoji, anime, long text, watermarks, brands, and identifiable private people.

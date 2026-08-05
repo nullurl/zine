@@ -1,0 +1,9 @@
+Vertical 4:5 poster, black void background, one dominant white perforated ticket card, die-cut scalloped edges, floating like a film program object, no mockup. Keep the main card large and centered-left, with a narrow repeat strip of smaller tickets on the right, all isolated against deep black negative space.
+
+Main card: a lone traveler wandering through a cloud corridor, a narrow path or bridge above drifting clouds, one moon or lamp, and a theatrical stage-like framing with curtains or arch lines; the image should feel like a printed black-and-white film still or old program engraving, upper-half illustration panel, lower metadata block, repeat strip on the right, high-contrast monochrome print look.
+
+Typography: bold distressed slab serif title reading "云游" at the top, a small English subtitle line such as "Cloud Drifter", short Chinese title integrated into the lower block, small genre line, ticket-like metadata rows for hall, seat, price, date, and time, optional slogan line, no paragraphs. Make the title heavy, poster-like, and slightly imperfect.
+
+Palette: black-and-white base only, photocopy grain, halftone speckle, ink drag, worn edges, slight misregistration, chalky black fills, and rough screenprint texture. Keep the card bright white and the void deeply black, with no rainbow palette and no glossy lighting.
+
+Mood: retro cinema, collectible program card, slightly uncanny, theatrical, hand-printed, poetic and wandering. Avoid glossy ad render, UI card, scrapbook clutter, neon, full-bleed scene, cinematic 3D lighting, or too much decorative detail.

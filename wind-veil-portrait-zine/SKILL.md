@@ -1,5 +1,5 @@
 ---
-name: wind-veil-portrait-zine
+name: 风纱肖像
 description: "Generate prompts and finished raster images for wind-swept cinematic portrait zines and wuxia key visual posters. Use when the user provides a portrait brief, reference image, figure, fabric, veil, ribbon, wind, motion, armor, warrior, battle, mask, ruin, banner, ancient Chinese landscape, bamboo, pavilion, mountain gate, battlefield glow, reflective metal, sparks, crowd haze, or dramatic editorial mood and wants a vertical or horizontal poster with one close subject, flowing cloth or hair, shallow depth of field, drifting particles, restrained red or warm accents, and Minimal Zine-style control over space, text, and hierarchy."
 ---
 

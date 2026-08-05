@@ -1,5 +1,5 @@
 ---
-name: soft-focus-memory-album
+name: 柔焦记忆
 description: Generate prompts and finished raster images for soft-focus digital memory albums, summer day collages, travel recaps, lifestyle photo diaries, friendship memories, café and street snapshots, and cinematic photo boards. Use when the user wants a wide blurred-scene background with a central cluster of overlapping photo windows, thin white frames, dotted or star halftone textures, handwritten titles, short editorial captions, arrows, and a restrained nostalgic color grade.
 ---
 

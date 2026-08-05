@@ -1,5 +1,5 @@
 ---
-name: botanical-scrapbook-zine
+name: 植物剪贴簿
 description: Generate prompts and finished raster images for sunlit botanical scrapbook zines, garden memory pages, nature diaries, seasonal photo journals, handmade collage posters, plant field notes, open ring-albums, and keepsake-tin collages. Use when the user provides a theme, memory, poem, place, season, plant, garden photographs, or visual references and wants a vertical off-white paper composition with generous negative space, natural snapshot fragments, clipped type, handwritten notes, Polaroids, ledger paper, lace or tickets, and restrained green-led color.
 ---
 

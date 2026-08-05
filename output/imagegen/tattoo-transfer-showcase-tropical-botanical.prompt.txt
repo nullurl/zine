@@ -1,0 +1,23 @@
+Use case: stylized-concept
+Asset type: tattoo transfer showcase sheet / temporary tattoo presentation image
+Primary request: tropical plant tattoo effect, with a soft skin-placement mockup on the left and a separate isolated tattoo artwork on the right
+Scene/backdrop: flat scanned ivory paper and transfer-sheet background, no real room scene
+Subject: one delicate tropical plant motif built from monstera, fern, palm rib, and staghorn fern linework
+Style/medium: editorial tattoo presentation, fine-line transfer art, watercolor bloom, ink dots, handmade paper scan
+Composition/framing: wide horizontal 16:9 sheet, left 45% soft forearm or wrist placement photo, right 55% isolated tattoo artwork on blank paper
+Lighting/mood: soft natural daylight, calm, intimate, lightweight, skin-friendly
+Color palette: green-botanical with moss green, yellow sparkle, charcoal line, pale ivory paper
+Materials/textures: natural skin tone, linen or cotton fabric hint, faint paper fibers, slight watercolor bleed, printable tattoo transfer texture
+Text (verbatim): "tropical plant"
+Constraints: keep the caption small and secondary, add a tiny size note like 8 x 3 cm, include a discreet fictional studio mark only if it helps, preserve generous negative space, make the tattoo clear on both the skin mockup and the isolated artwork
+Avoid: commercial ad layout, CTA, QR code, logo, real brand name, copied signature, dark muddy paper, heavy blackwork realism, biker flash, gothic skulls, tribal bands, dense sticker clutter, glossy 3D mockup, stock-photo ad, long readable text blocks
+
+Wide horizontal tattoo transfer showcase sheet on pale ivory scanned paper, split-skin-paper layout, generous negative space, flat orthographic view, calm and legible.
+
+Left side: soft daylight placement photo of a wrist or forearm with a small tropical plant temporary tattoo applied at a subtle scale, natural skin tone, gentle linen or cotton fabric hint, low contrast photo softness, the tattoo remains visible and delicate.
+
+Right side: isolated tattoo transfer artwork of a tropical plant motif combining monstera leaves, fern fronds, palm rib lines, and a staghorn fern silhouette trace, fine charcoal linework with moss green wash and a small yellow sparkle accent, watercolor bloom, tiny ink dots, printable fine-line temporary tattoo design centered on textured paper with quiet blank space.
+
+Small caption text: "tropical plant" in thin editorial serif beneath the artwork, with a tiny size note like "8 x 3 cm" and an invented studio mark placed discreetly, no real brand and no copied signature.
+
+Intimate handmade editorial mood, matte scan, soft natural light, no commercial ad, no CTA, no QR code, no logo, no heavy realism, no clutter.

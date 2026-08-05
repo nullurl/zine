@@ -1,5 +1,5 @@
 ---
-name: textile-swatch-zine-v0-2
+name: 织物样本V2
 description: Generate v0.2 textile and material swatch zine prompts and finished raster images with source-palette preservation. Use when the user provides a theme, place, season, material direction, reference image, or mood and wants a vertical fibrous-paper swatch-board composition that can preserve the reference image's original color palette while keeping tactile sample cards, real textile textures, tiny labels, generous blank space, and soft scan lighting.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: neon-botanical-annotation-zine
+name: 霓虹植物
 description: Generate prompts and finished raster images for dark botanical photo zines, neon-annotated flower field notes, Y2K garden overlays, night plant editorials, pixel botanical labels, cyber scrapbook plant pages, and poetic photographed flora with graphic annotations. Use when the user provides plant photos, flower names, a garden/night/street scene, a mood, a memory, reference images, or asks for flowers/plants with cyan, magenta, white, dotted, numbered, framed, pixel, script, color-chip, UI-like, or field-note annotations fused with Minimal Zine negative-space discipline and a generated bitmap image.
 ---
 

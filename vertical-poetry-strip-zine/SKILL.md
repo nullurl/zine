@@ -1,5 +1,5 @@
 ---
-name: vertical-poetry-strip-zine
+name: 竖排诗条
 description: Generate prompts and finished raster images for sparse vertical handwritten poetry-strip posters. Use when the user provides a short Chinese/Japanese phrase, poem fragment, emotion, memory, reference image, calligraphy note, wall-hung paper strip, bookmark-like scroll, or minimalist typography brief and wants a huge quiet white wall, one narrow vertical rice-paper strip, hand-brushed vertical characters, red or black ink, tiny seal/signature marks, soft tape shadows, paper fibers, Minimal Zine negative space, and a generated bitmap image.
 ---
 

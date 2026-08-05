@@ -1,5 +1,5 @@
 ---
-name: gilded-ripple-poetry-zine
+name: 鎏金涟漪
 description: Generate prompts and finished raster images for ornate vintage water-and-coast poetry zines. Use when the user provides a theme, sentence, river, lake, ocean, windmill, boat, flower, bird, dusk, travel memory, reference image, or poetic title and wants a cream-paper editorial poster with decorative calligraphic English title, bold serif subtitle band, Chinese vertical or corner title, central risograph illustration panel, aqua water, sage typography, golden glimmer, aged print grain, and a generated bitmap image.
 ---
 

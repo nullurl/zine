@@ -1,5 +1,5 @@
 ---
-name: archival-dossier-zine
+name: 档案卷宗
 description: Generate prompts and finished raster images of tactile archival dossiers, evidence folders, field notebooks, experimental manuals, research files, observation sheets, flight plans, bureaucratic forms, and ring-bound paper artifacts. Use when the user wants black-background archive-object photography, aged administrative paper, typed forms, handwritten annotations, stamps, clips, punched holes, document pockets, controlled primary-color inserts, or a fusion of minimal zine design with physical records and institutional ephemera.
 ---
 

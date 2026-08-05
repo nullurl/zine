@@ -1,5 +1,5 @@
 ---
-name: paper-remains-zine
+name: 纸本遗迹
 description: "Generate prompts and finished raster images for sparse torn-paper relic posters. Use when the user provides a theme, phrase, memory, object, reference image, or text fragment and wants aged fibrous paper, torn scraps, envelope corners, label fragments, stamp marks, one controlled accent color, and a large quiet paper field."
 ---
 

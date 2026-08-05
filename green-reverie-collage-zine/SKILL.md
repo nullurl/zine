@@ -1,5 +1,5 @@
 ---
-name: green-reverie-collage-zine
+name: 绿色遐想
 description: Generate prompts and finished raster images for dreamy green nature collage zines, water-and-tree memory pages, pond reverie posters, soft surreal landscape scrapbooks, garden adventure pages, cut-paper photo montages, lotus and forest dream scenes, and pale green diary collages. Use when the user provides a place, memory, mood, photo reference, nature subject, travel fragment, poem, or theme and wants layered green photographic cutouts, watery reflections, tree canopies, textured paper fields, polka dots, torn windows, tiny stars, short quote strips, surreal silhouettes, and Minimal Zine negative-space discipline in a generated bitmap image.
 ---
 
