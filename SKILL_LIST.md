@@ -1,6 +1,6 @@
 # Zine Skills · 电子手帐创作系统
 
-> 87 个 AI 技能 · 174 张示例图
+> 83 个 AI 技能 · 174 张示例图
 
 工作区: `b86e35b0-6369-4449-ab37-fc0810d1822a`
 
@@ -91,12 +91,8 @@
 | 81 | 电影肖像胶片 | `cinema-portrait-film-zine` | 2 | Generate prompts and finished raster images for cinematic real-person film port |
 | 82 | 梦境花绽纱幕 | `dream-bloom-veil-zine` | 2 | Generate prompts and finished raster images for dreamy botanical veil-overlay zi |
 
-## 工具类 (5 个)
+## 工具类 (1 个)
 
 | # | 中文名 | 目录 | 说明 |
 |---|--------|------|------|
-| 1 | B端设计规范 | `b-end-design` | 基于 Ant Design 的完整 B 端 UI 设计规范，含 Token、组件、页面模式、业务模板和验收 Checklist。导入 AI 工具后可直接作为 B |
-| 2 | 宠物孵化器 | `hatch-pet` | Create, repair, validate, visually QA, and package Codex-compatible animated pet |
-| 3 | 照片贴纸包 | `photo-sticker-pack-runtime` | Use when a user asks to turn an uploaded or local photo into exactly eight perso |
-| 4 | PPT生成器 | `ppt-generator` | 基于七角色协作的智能 PPT 生成与优化工具。支持主题生成、模板推荐、内容填充、AI 智能配图、文本润色和 PPTX 文件生成。适用于学术汇报、商业演示、培训课 |
-| 5 | UI设计指南 | `ui-design-guide` | Use when users need visual direction, interface hierarchy, layout decisions, des |
+| 1 | 照片贴纸包 | `photo-sticker-pack-runtime` | Use when a user asks to turn an uploaded or local photo into exactly eight perso |

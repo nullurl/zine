@@ -1,6 +1,6 @@
 # Zine Skills · 图片介绍
 
-> 87 个 AI 技能 · 174 张示例图
+> 83 个 AI 技能 · 174 张示例图
 
 ## 分析诗学海报
 `analytical-skyline-poetry-zine` · 2 张
