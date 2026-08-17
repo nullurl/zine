@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>我的贴图包</title>
+<style>
+:root{--ink:#2E429B;--paper-ratio:1200/1697}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#fff}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;color:#17213e}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.paper{position:relative;width:min(calc(100vw - 16px),980px);aspect-ratio:var(--paper-ratio);margin:0 auto;background:#fff;overflow:hidden}
+.sticker{appearance:none;position:absolute;z-index:1;left:var(--x);top:var(--y);width:var(--w);aspect-ratio:var(--ar);padding:0;border:0;background:transparent;color:var(--ink);cursor:pointer;transform:rotate(var(--r));transform-origin:center;transform-style:preserve-3d;filter:drop-shadow(0 1px 1px rgba(19,27,58,.16)) drop-shadow(0 7px 8px rgba(19,27,58,.12));transition:transform .18s ease,filter .18s ease}
+.sticker:hover,.sticker:focus-visible{transform:rotate(var(--r)) translateY(-3px) scale(1.018);filter:drop-shadow(0 2px 2px rgba(19,27,58,.15)) drop-shadow(0 10px 11px rgba(19,27,58,.15));outline:none}
+.sticker[data-peeling="true"]{z-index:30;pointer-events:none;transition:none}
+.sticker[data-removed="true"]{visibility:hidden;pointer-events:none}
+.sticker[data-mesh-active="true"] .sticker-face{opacity:0}
+.sticker-face{position:absolute;z-index:1;inset:0;display:block}
+.sticker svg,.peel-residue svg{display:block;width:100%;height:100%;overflow:visible;color:var(--ink)}
+.peel-residue{position:absolute;z-index:0;left:var(--x);top:var(--y);width:var(--w);aspect-ratio:var(--ar);display:block;pointer-events:none;transform:rotate(var(--r));transform-origin:center;opacity:0;filter:grayscale(1) contrast(.72) opacity(.52) blur(.35px);mix-blend-mode:multiply}
+.peel-residue[data-settled="true"]{opacity:.28}
+.sticker-peel-canvas{position:fixed;z-index:100;pointer-events:none;will-change:filter}
+.sticker.missing{display:grid;place-items:center;color:#9aa1b5;border:1px dashed #d8dbe5;border-radius:50%;cursor:default}
+.color-picker{position:fixed;z-index:20;right:16px;top:16px;width:38px;height:38px}
+.color-trigger{appearance:none;display:grid;width:38px;height:38px;padding:0;place-items:center;border:0;border-radius:50%;background:transparent;cursor:pointer}
+.color-trigger-dot{display:block;width:21px;height:21px;border:2px solid #fff;border-radius:50%;background:var(--ink);box-shadow:0 0 0 1px rgba(27,34,59,.14),0 5px 15px rgba(27,34,59,.16);transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s ease}
+.color-trigger:hover .color-trigger-dot,.color-trigger:focus-visible .color-trigger-dot{transform:scale(1.08);box-shadow:0 0 0 1px rgba(27,34,59,.2),0 7px 18px rgba(27,34,59,.2)}
+.color-trigger:focus-visible{outline:2px solid color-mix(in srgb,var(--ink),transparent 46%);outline-offset:2px}
+.color-options{position:absolute;right:34px;top:50%;display:flex;align-items:center;gap:9px;padding:5px 8px 5px 5px;opacity:0;pointer-events:none;transform:translate(10px,-50%) scale(.92);transform-origin:right center;transition:opacity .18s ease,transform .3s cubic-bezier(.16,1,.3,1)}
+.color-picker:hover .color-options,.color-picker:focus-within .color-options,.color-picker[data-open="true"] .color-options{opacity:1;pointer-events:auto;transform:translate(0,-50%) scale(1)}
+.swatch,.custom-swatch,.desktop-mode{position:relative;flex:0 0 auto;width:21px;height:21px;border:2px solid #fff;border-radius:50%;box-shadow:0 0 0 1px rgba(27,34,59,.14),0 4px 11px rgba(27,34,59,.13);transition:transform .22s cubic-bezier(.16,1,.3,1),box-shadow .22s ease}
+.swatch{appearance:none;padding:0;background:var(--swatch);cursor:pointer}
+.desktop-mode{appearance:none;display:grid;place-items:center;padding:0;background:#fff;color:#7b8191;cursor:pointer}
+.desktop-mode svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.swatch:hover,.swatch:focus-visible,.custom-swatch:hover,.custom-swatch:focus-within,.desktop-mode:hover,.desktop-mode:focus-visible{transform:translateY(-2px) scale(1.08);box-shadow:0 0 0 1px rgba(27,34,59,.2),0 7px 15px rgba(27,34,59,.18);outline:none}
+.swatch[aria-pressed="true"]{box-shadow:0 0 0 2px #fff,0 0 0 3px rgba(27,34,59,.3),0 5px 12px rgba(27,34,59,.16)}
+.desktop-mode[aria-pressed="true"]{background:var(--ink);color:#fff;box-shadow:0 0 0 2px #fff,0 0 0 3px color-mix(in srgb,var(--ink),transparent 65%),0 5px 12px rgba(27,34,59,.16)}
+.custom-swatch{display:block;overflow:hidden;background:conic-gradient(#C63C4A,#DBA72E,#217A5B,#2E67B5,#6A45A5,#C63C4A);cursor:pointer}
+.custom-swatch input{position:absolute;inset:-8px;width:calc(100% + 16px);height:calc(100% + 16px);padding:0;border:0;opacity:0;cursor:pointer}
+.gallery-guide,.status-toast{position:fixed;z-index:45;left:50%;bottom:22px;display:flex;align-items:center;gap:14px;max-width:min(92vw,560px);padding:12px 14px 12px 17px;border:1px solid rgba(27,34,59,.09);border-radius:18px;background:rgba(255,255,255,.96);box-shadow:0 16px 44px rgba(27,34,59,.16);transform:translateX(-50%);font-size:14px;line-height:1.45;backdrop-filter:blur(14px)}
+.gallery-guide button{appearance:none;padding:6px 10px;border:0;border-radius:10px;background:#eef1fb;color:var(--ink);font:inherit;font-weight:650;cursor:pointer;white-space:nowrap}
+.status-toast{z-index:46;pointer-events:none}
+.gallery-guide[hidden],.status-toast[hidden],.desktop-guide[hidden]{display:none}
+.desktop-guide{position:fixed;z-index:60;inset:0;display:grid;place-items:center;padding:24px;background:rgba(22,28,48,.2);backdrop-filter:blur(7px)}
+.desktop-guide-card{width:min(92vw,390px);padding:25px;border:1px solid rgba(27,34,59,.09);border-radius:24px;background:#fff;box-shadow:0 24px 70px rgba(27,34,59,.22)}
+.desktop-guide-kicker{margin:0 0 8px;color:var(--ink);font-size:12px;font-weight:760;letter-spacing:.1em;text-transform:uppercase}
+.desktop-guide h2{margin:0 0 10px;font-size:23px;letter-spacing:-.02em}
+.desktop-guide p{margin:0 0 10px;color:#596176;font-size:14px;line-height:1.6}
+.desktop-guide .browser-note{margin-top:13px;padding:10px 12px;border-radius:12px;background:#f5f6fa;color:#596176}
+.desktop-guide-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:20px}
+.desktop-guide-actions button{appearance:none;padding:9px 13px;border:0;border-radius:12px;font:inherit;font-weight:670;cursor:pointer}
+.desktop-guide-actions .secondary{background:#f0f1f5;color:#596176}
+.desktop-guide-actions .primary{background:var(--ink);color:#fff}
+@media(max-width:700px){.paper{width:100vw}.color-picker{right:8px;top:8px}}
+@media(prefers-reduced-motion:reduce){.sticker,.color-trigger-dot,.color-options,.swatch,.custom-swatch,.desktop-mode{transition:none}.sticker:hover,.sticker:focus-visible{transform:rotate(var(--r))}.desktop-guide{backdrop-filter:none}}
+</style>
+</head>
+<body>
+<main>
+<h1 class="sr-only">我的贴图包</h1>
+<p id="packStatus" class="sr-only" role="status"></p>
+<div id="colorPicker" class="color-picker" aria-label="贴图颜色">
+  <button id="colorTrigger" class="color-trigger" type="button" aria-label="选择贴图颜色" aria-haspopup="true" aria-expanded="false" aria-controls="colorOptions">
+    <span class="color-trigger-dot" aria-hidden="true"></span>
+  </button>
+  <div id="colorOptions" class="color-options" role="group" aria-label="可选颜色">
+    <button class="swatch" type="button" style="--swatch:#2E429B" data-color="#2E429B" aria-label="默认蓝色" aria-pressed="true"></button>
+    <button class="swatch" type="button" style="--swatch:#C63C4A" data-color="#C63C4A" aria-label="红色" aria-pressed="false"></button>
+    <button class="swatch" type="button" style="--swatch:#217A5B" data-color="#217A5B" aria-label="绿色" aria-pressed="false"></button>
+    <button class="swatch" type="button" style="--swatch:#6A45A5" data-color="#6A45A5" aria-label="紫色" aria-pressed="false"></button>
+    <label class="custom-swatch">
+      <span class="sr-only">自定义颜色</span>
+      <input id="customColor" type="color" value="#2E429B" aria-label="自定义颜色">
+    </label>
+    <button id="desktopMode" class="desktop-mode" type="button" aria-label="切换为放到桌面" aria-pressed="false" title="放到桌面">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.1" y="2.6" width="11.8" height="8.1" rx="1.5"></rect><path d="M6 13.4h4M8 10.9v2.5"></path></svg>
+    </button>
+  </div>
+</div>
+<div id="galleryGuide" class="gallery-guide" role="status" hidden>
+  <span>点击贴纸即可揭下并下载 PNG，右上角蓝点可以切换颜色。</span>
+  <button id="galleryGuideClose" type="button">知道了</button>
+</div>
+<div id="statusToast" class="status-toast" role="status" hidden></div>
+<div id="desktopGuide" class="desktop-guide" role="dialog" aria-modal="true" aria-labelledby="desktopGuideTitle" hidden>
+  <section class="desktop-guide-card">
+    <p class="desktop-guide-kicker">macOS 可选功能</p>
+    <h2 id="desktopGuideTitle">启用桌面贴纸</h2>
+    <p>需要运行 StickerDesk 小助手，普通 PNG 和 SVG 下载不受影响。</p>
+    <p class="browser-note">如果当前页面位于 Codex 内置浏览器，请使用 Safari 打开后再放到桌面。</p>
+    <div class="desktop-guide-actions">
+      <button id="desktopGuideCancel" class="secondary" type="button">暂时不用</button>
+      <button id="desktopGuideReady" class="primary" type="button">我已打开 StickerDesk</button>
+    </div>
+  </section>
+</div>
+<section class="paper">__CARDS__</section>
+</main>
+<script>__THREE_JS__</script>
+<script>const PACK=__PACK_JSON__;</script>
+<script>
+let currentColor="#2E429B";let deliveryMode="download";
+const enc=new TextEncoder();
+const COLOR=/^#[0-9a-f]{6}$/i;
+const PEEL_DURATION=1180;
+const PEEL_EDGES={
+left:{nx:1,ny:0,pullX:-1,pullY:-.12,spin:-1},
+right:{nx:-1,ny:0,pullX:1,pullY:-.12,spin:1},
+top:{nx:0,ny:-1,pullX:.12,pullY:-1,spin:1},
+bottom:{nx:0,ny:1,pullX:.12,pullY:1,spin:-1}
+};
+function setColor(color){if(!COLOR.test(color))return;currentColor=color.toUpperCase();document.documentElement.style.setProperty("--ink",currentColor);document.querySelector("#customColor").value=currentColor;document.querySelector(".color-trigger-dot").style.background=currentColor;document.querySelectorAll("[data-color]").forEach(button=>button.setAttribute("aria-pressed",String(button.dataset.color.toUpperCase()===currentColor)));}
+function setPickerOpen(open){const picker=document.querySelector("#colorPicker"),trigger=document.querySelector("#colorTrigger");picker.dataset.open=String(open);trigger.setAttribute("aria-expanded",String(open));}
+function safeStorageGet(key){try{return localStorage.getItem(key)}catch(error){return null}}
+function safeStorageSet(key,value){try{localStorage.setItem(key,value)}catch(error){}}
+let toastTimer=null;
+function showToast(message,duration=4200){const toast=document.querySelector("#statusToast");toast.textContent=message;toast.hidden=false;if(toastTimer)clearTimeout(toastTimer);toastTimer=setTimeout(()=>{toast.hidden=true},duration)}
+function setDesktopDelivery(enabled){deliveryMode=enabled?"desktop":"download";const button=document.querySelector("#desktopMode");button.setAttribute("aria-pressed",String(enabled));button.setAttribute("aria-label",enabled?"切换为下载 PNG":"切换为放到桌面");button.title=enabled?"点击贴纸时放到桌面":"点击贴纸时下载 PNG";document.querySelector("#packStatus").textContent=enabled?"桌面模式已开启；点击贴纸会交给 StickerDesk":"下载模式已开启";showToast(enabled?"桌面模式已开启 · 请在 Safari 中点击贴纸":"已切换为 PNG 下载");setPickerOpen(false);button.blur()}
+function desktopStickerURL(item){if(location.protocol!=="file:")return null;try{const pack=decodeURIComponent(new URL(".",location.href).pathname.replace(/\/$/,"")),params=new URLSearchParams({pack,id:String(item.id),color:currentColor.slice(1)});return"photosticker://add?"+params.toString()}catch(error){console.error(error);return null}}
+function requestDesktopSticker(item){const url=desktopStickerURL(item);if(!url)return false;const link=document.createElement("a");link.href=url;link.hidden=true;document.body.append(link);link.click();link.remove();return true}
+function coloredSvg(item){const doc=new DOMParser().parseFromString(item.svg,"image/svg+xml");doc.documentElement.style.color=currentColor;return new XMLSerializer().serializeToString(doc);}
+function save(bytes,name,type){const blob=new Blob([bytes],{type});const link=document.createElement("a");link.href=URL.createObjectURL(blob);link.download=name;link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000);}
+async function pngBytes(item){const svg=coloredSvg(item);const url=URL.createObjectURL(new Blob([svg],{type:"image/svg+xml"}));const image=new Image();await new Promise((ok,fail)=>{image.onload=ok;image.onerror=fail;image.src=url});const canvas=document.createElement("canvas");canvas.width=1024;canvas.height=1024;canvas.getContext("2d").drawImage(image,0,0,1024,1024);URL.revokeObjectURL(url);return new Uint8Array(await (await fetch(canvas.toDataURL("image/png"))).arrayBuffer());}
+function nearestEdge(event,target){if(event.detail===0||!Number.isFinite(event.clientX)||!Number.isFinite(event.clientY))return"right";const rect=target.getBoundingClientRect(),x=Math.max(0,Math.min(rect.width,event.clientX-rect.left)),y=Math.max(0,Math.min(rect.height,event.clientY-rect.top)),edges=[["left",x],["right",rect.width-x],["top",y],["bottom",rect.height-y]];edges.sort((a,b)=>a[1]-b[1]);return edges[0][0]}
+function smoothstep(value){const x=Math.max(0,Math.min(1,value));return x*x*(3-2*x)}
+async function stickerTexture(target){const svg=target.querySelector(".sticker-face svg").cloneNode(true),viewBox=svg.getAttribute("viewBox").split(/\s+/).map(Number),ratio=viewBox[2]/viewBox[3];svg.style.color=currentColor;svg.setAttribute("width","1536");svg.setAttribute("height",String(Math.round(1536/ratio)));const source=new XMLSerializer().serializeToString(svg),url=URL.createObjectURL(new Blob([source],{type:"image/svg+xml"})),image=new Image();try{await new Promise((resolve,reject)=>{image.onload=resolve;image.onerror=reject;image.src=url})}finally{URL.revokeObjectURL(url)}const texture=new THREE.Texture(image);texture.colorSpace=THREE.SRGBColorSpace;texture.minFilter=THREE.LinearMipmapLinearFilter;texture.magFilter=THREE.LinearFilter;texture.needsUpdate=true;return texture}
+function peelMaterial(texture){return new THREE.ShaderMaterial({uniforms:{map:{value:texture},opacity:{value:1}},vertexShader:"varying vec2 vUv;varying vec3 vNormal;void main(){vUv=uv;vNormal=normalize(normalMatrix*normal);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}",fragmentShader:"uniform sampler2D map;uniform float opacity;varying vec2 vUv;varying vec3 vNormal;void main(){vec4 tex=texture2D(map,vUv);if(tex.a<0.012)discard;vec3 n=normalize(vNormal);float light=0.76+0.24*abs(dot(n,normalize(vec3(-0.32,0.48,1.0))));vec3 paper=gl_FrontFacing?tex.rgb:mix(vec3(0.80,0.79,0.75),tex.rgb,0.05);gl_FragColor=vec4(paper*light,tex.a*opacity);}",transparent:true,side:THREE.DoubleSide,depthWrite:true})}
+function createPeelScene(target,edge,texture){const rect=target.getBoundingClientRect(),width=target.offsetWidth,height=target.offsetHeight,margin=Math.ceil(Math.max(width,height)*.72+42),canvasWidth=Math.ceil(width+margin*2),canvasHeight=Math.ceil(height+margin*2),renderer=new THREE.WebGLRenderer({alpha:true,antialias:true,premultipliedAlpha:true,preserveDrawingBuffer:true,powerPreference:"high-performance"});renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));renderer.setSize(canvasWidth,canvasHeight,true);renderer.setClearColor(0x000000,0);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.domElement.className="sticker-peel-canvas";renderer.domElement.style.left=`${rect.left+rect.width*.5-canvasWidth*.5}px`;renderer.domElement.style.top=`${rect.top+rect.height*.5-canvasHeight*.5}px`;document.body.append(renderer.domElement);const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(35,canvasWidth/canvasHeight,1,3000),cameraDistance=(canvasHeight*.5)/Math.tan(THREE.MathUtils.degToRad(17.5));camera.position.z=cameraDistance;const geometry=new THREE.PlaneGeometry(width,height,32,32),position=geometry.getAttribute("position"),original=new Float32Array(position.array),material=peelMaterial(texture),mesh=new THREE.Mesh(geometry,material),base=parseFloat(getComputedStyle(target).getPropertyValue("--r"))||0;mesh.rotation.z=-THREE.MathUtils.degToRad(base);scene.add(mesh);return{edge,spec:PEEL_EDGES[edge],rect,width,height,renderer,scene,camera,geometry,position,original,material,mesh,base,centerX:0,centerY:0,texture}}
+function curlStickerMesh(state,progress){const{spec,width,height,position,original,geometry,mesh,material,centerX,centerY,base}=state,axisLength=spec.nx?width:height,peelProgress=smoothstep(progress/.79),front=axisLength*1.08*peelProgress,radius=Math.max(14,Math.min(axisLength*.16,48)),detachProgress=smoothstep((progress-.77)/.23),crossLength=spec.nx?height:width;for(let index=0;index<position.count;index++){const offset=index*3,x=original[offset],y=original[offset+1],distance=spec.nx>0?x+width*.5:spec.nx<0?width*.5-x:spec.ny<0?height*.5-y:y+height*.5,cross=spec.nx?y:x,peeled=Math.max(0,front-distance);let px=x,py=y,pz=0;if(peeled>0){const angle=Math.min(peeled/radius,2.22),tail=Math.max(0,peeled-radius*angle),mapped=front-radius*Math.sin(angle)-tail*Math.cos(angle),shift=mapped-distance;px+=spec.nx*shift;py+=spec.ny*shift;pz=radius*(1-Math.cos(angle))+tail*Math.sin(angle);pz+=Math.sin((cross/crossLength+.5)*Math.PI)*radius*.065*peelProgress}position.setXYZ(index,px,py,pz)}position.needsUpdate=true;geometry.computeVertexNormals();mesh.position.x=centerX+spec.pullX*axisLength*.42*detachProgress;mesh.position.y=centerY-spec.pullY*axisLength*.34*detachProgress+22*detachProgress;mesh.position.z=54*detachProgress;mesh.rotation.z=-THREE.MathUtils.degToRad(base)+spec.spin*.18*detachProgress;mesh.rotation.x=spec.ny*(.16*peelProgress+.18*detachProgress);mesh.rotation.y=-spec.nx*(.16*peelProgress+.18*detachProgress);material.uniforms.opacity.value=1-smoothstep((detachProgress-.58)/.42);state.renderer.domElement.style.filter=`drop-shadow(${spec.pullX*-5*peelProgress}px ${8+18*peelProgress}px ${7+20*peelProgress}px rgba(19,27,58,${.14+.08*peelProgress}))`}
+function runMeshPeel(state){return new Promise((resolve,reject)=>{const started=performance.now();function frame(now){try{const elapsed=now-started,progress=Math.min(1,elapsed/PEEL_DURATION);curlStickerMesh(state,progress);const{renderer,scene,camera}=state;renderer.render(scene,camera);if(progress<1){requestAnimationFrame(frame)}else{resolve()}}catch(error){reject(error)}}requestAnimationFrame(frame)})}
+function disposePeelScene(state){if(!state)return;state.geometry.dispose();state.material.dispose();state.texture.dispose();state.renderer.dispose();state.renderer.forceContextLoss();state.renderer.domElement.remove()}
+function makePeelResidue(target){const residue=document.createElement("span"),clone=target.querySelector(".sticker-face svg").cloneNode(true);residue.className="peel-residue";residue.setAttribute("aria-hidden","true");residue.setAttribute("style",target.getAttribute("style")||"");clone.style.color="#93969D";residue.append(clone);target.parentElement.insertBefore(residue,target);const motion=typeof residue.animate==="function"?residue.animate([{opacity:.04},{offset:.7,opacity:.16},{opacity:.28}],{duration:PEEL_DURATION+140,fill:"forwards",easing:"ease-out"}):null;return{residue,motion}}
+function settlePeel(target,residue){target.dataset.removed="true";delete target.dataset.meshActive;residue.dataset.settled="true";residue.style.opacity=".28"}
+async function peelAndDownload(target,event){if(target.dataset.peeling)return;const item=PACK.items.find(row=>row.id===Number(target.dataset.downloadId));if(!item)return;const desktopRequested=deliveryMode==="desktop"&&requestDesktopSticker(item);target.dataset.peeling="true";target.setAttribute("aria-busy","true");const status=document.querySelector("#packStatus"),reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches||typeof target.animate!=="function"||typeof THREE==="undefined",{residue,motion:residueMotion}=makePeelResidue(target);let state=null,removed=false,bytesPromise=null,downloadPromise=null,deliveryPromise=null;const downloadOnce=()=>{if(!downloadPromise)downloadPromise=(async()=>{if(!bytesPromise)bytesPromise=pngBytes(item);save(await bytesPromise,item.stem+".png","image/png");status.textContent="PNG 已下载"})();return downloadPromise},deliverOnce=()=>{if(!deliveryPromise)deliveryPromise=(async()=>{if(desktopRequested){status.textContent="已交给桌面贴纸助手";return}await downloadOnce()})();return deliveryPromise},finishRemoval=()=>{settlePeel(target,residue);removed=true;status.textContent=desktopRequested?"贴纸已放到桌面并揭下":"PNG 已下载，贴纸已揭下";showToast(desktopRequested?"已发送到桌面 · 使用菜单栏 ◈ 编辑；若未出现请用 Safari 打开":"PNG 已下载")};status.textContent=desktopRequested?`正在揭下并放到桌面 ${item.caption||"贴图 "+item.id}`:`正在揭下并下载 ${item.caption||"贴图 "+item.id}`;if(reduced){try{await deliverOnce();finishRemoval()}catch(error){status.textContent=desktopRequested?"无法放到桌面，请先构建并打开 StickerDesk":"PNG 下载失败";console.error(error)}finally{if(residueMotion)residueMotion.cancel();if(!removed)residue.remove();delete target.dataset.peeling;target.removeAttribute("aria-busy")}return}const edge=nearestEdge(event,target);try{const texture=await stickerTexture(target);state=createPeelScene(target,edge,texture);curlStickerMesh(state,0);state.renderer.render(state.scene,state.camera);target.dataset.meshActive="true";const motion=runMeshPeel(state),deliveryMoment=(async()=>{await new Promise(resolve=>setTimeout(resolve,790));await deliverOnce()})();await Promise.all([motion,deliveryMoment]);finishRemoval();disposePeelScene(state);state=null}catch(error){try{await deliverOnce();finishRemoval()}catch(deliveryError){status.textContent=desktopRequested?"无法放到桌面，请先构建并打开 StickerDesk":"PNG 下载失败";showToast(status.textContent);console.error(deliveryError)}console.error(error)}finally{disposePeelScene(state);if(residueMotion)residueMotion.cancel();if(removed){residue.dataset.settled="true";residue.style.opacity=".28"}else{residue.remove()}delete target.dataset.meshActive;delete target.dataset.peeling;target.removeAttribute("aria-busy")}}
+function crc32(bytes){let crc=-1;for(const value of bytes){crc^=value;for(let bit=0;bit<8;bit++)crc=(crc>>>1)^((crc&1)?0xEDB88320:0)}return(crc^-1)>>>0}
+function u16(value){return new Uint8Array([value&255,(value>>>8)&255])}function u32(value){return new Uint8Array([value&255,(value>>>8)&255,(value>>>16)&255,(value>>>24)&255])}function join(parts){const out=new Uint8Array(parts.reduce((n,p)=>n+p.length,0));let offset=0;for(const part of parts){out.set(part,offset);offset+=part.length}return out}
+function storeZip(entries){const locals=[],centrals=[];let offset=0;for(const entry of entries){const name=enc.encode(entry.name),data=entry.data,crc=crc32(data);const local=join([u32(0x04034b50),u16(20),u16(0),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),u16(name.length),u16(0),name,data]);locals.push(local);centrals.push(join([u32(0x02014b50),u16(20),u16(20),u16(0),u16(0),u16(0),u16(0),u32(crc),u32(data.length),u32(data.length),u16(name.length),u16(0),u16(0),u16(0),u16(0),u32(0),u32(offset),name]));offset+=local.length}const central=join(centrals);return join([...locals,central,u32(0x06054b50),u16(0),u16(0),u16(entries.length),u16(entries.length),u32(central.length),u32(offset),u16(0)])}
+const colorPicker=document.querySelector("#colorPicker"),colorTrigger=document.querySelector("#colorTrigger"),customColor=document.querySelector("#customColor"),desktopMode=document.querySelector("#desktopMode"),galleryGuide=document.querySelector("#galleryGuide"),desktopGuide=document.querySelector("#desktopGuide");
+document.querySelector("#packStatus").textContent=PACK.complete?"八张贴图已完成":"未完成预览：缺失项已标记，暂不提供 ZIP";
+document.querySelectorAll("[data-color]").forEach(button=>button.onclick=()=>{setColor(button.dataset.color);setPickerOpen(false);button.blur()});
+customColor.oninput=event=>setColor(event.target.value);
+customColor.onchange=()=>{setPickerOpen(false);customColor.blur()};
+desktopMode.onclick=()=>{const enabled=desktopMode.getAttribute("aria-pressed")!=="true";if(enabled&&safeStorageGet("stickerDeskOnboardedV1")!=="1"){desktopGuide.hidden=false;setPickerOpen(false);return}setDesktopDelivery(enabled)};
+document.querySelector("#desktopGuideReady").onclick=()=>{safeStorageSet("stickerDeskOnboardedV1","1");desktopGuide.hidden=true;setDesktopDelivery(true)};
+document.querySelector("#desktopGuideCancel").onclick=()=>{desktopGuide.hidden=true;desktopMode.blur()};
+document.querySelector("#galleryGuideClose").onclick=()=>{galleryGuide.hidden=true;safeStorageSet("photoStickerGuideV1","1")};
+if(safeStorageGet("photoStickerGuideV1")!=="1"){galleryGuide.hidden=false;safeStorageSet("photoStickerGuideV1","1");setTimeout(()=>{galleryGuide.hidden=true},6500)}
+colorTrigger.onclick=()=>{const open=colorPicker.dataset.open!=="true";setPickerOpen(open);if(!open)colorTrigger.blur()};
+colorPicker.addEventListener("keydown",event=>{if(event.key==="Escape"){setPickerOpen(false);document.activeElement?.blur()}});
+desktopGuide.addEventListener("keydown",event=>{if(event.key==="Escape"){desktopGuide.hidden=true;desktopMode.focus()}});
+document.addEventListener?.("pointerdown",event=>{if(!colorPicker.contains(event.target))setPickerOpen(false)});
+document.querySelector(".paper").addEventListener("click",event=>{const target=event.target.closest("[data-download-id]");if(!target)return;void peelAndDownload(target,event);});
+</script></body></html>

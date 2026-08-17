@@ -1,0 +1,4 @@
+interface:
+  display_name: "Random Thoughts Note Zine"
+  short_description: "Photo-backed clipped note poster prompts"
+  default_prompt: "Use $random-thoughts-note-zine to turn my theme into a clipped random-thoughts note over a quiet photo background."

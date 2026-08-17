@@ -1,6 +1,6 @@
 ---
 name: 植物色谱
-description: Generate prompts and finished raster images for botanical photographs that overflow a white instant-photo frame into a flat saturated color field. Use when the user provides a flower, branch, leaf, lotus, tree, plant reference, season, phrase, or palette and wants a clean editorial botanical poster with a cutout subject crossing the frame boundary, preserved source colors, generous negative space, and Minimal Zine paper restraint rather than a scrapbook or commercial flower ad.
+description: "【植物色谱 / chromatic-botanical-overflow-zine】 Generate prompts and finished raster images for botanical photographs that overflow a white instant-photo frame into a flat saturated color field. Use when the user provides a flower, branch, leaf, lotus, tree, plant reference, season, phrase, or palette and wants a clean editorial botanical poster with a cutout subject crossing the frame boundary, preserved source colors, generous negative space, and Minimal Zine paper restraint rather than a scrapbook or commercial flower ad."
 ---
 
 # Chromatic Botanical Overflow Zine

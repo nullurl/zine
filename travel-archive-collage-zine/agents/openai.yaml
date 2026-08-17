@@ -1,0 +1,4 @@
+interface:
+  display_name: "Travel Archive Collage Zine"
+  short_description: "旅行照片转旧纸手账地图和中文书法档案拼贴海报"
+  default_prompt: "Use $travel-archive-collage-zine to turn this travel photo into an aged-paper archive collage zine poster."

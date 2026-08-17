@@ -1,0 +1,4 @@
+interface:
+  display_name: "Monthly Memory Planner Zine"
+  short_description: "Generate journal calendar memory collage posters"
+  default_prompt: "Use $monthly-memory-planner-zine to create a monthly journal calendar collage."

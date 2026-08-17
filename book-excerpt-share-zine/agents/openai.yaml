@@ -1,0 +1,4 @@
+interface:
+  display_name: "Book Excerpt Share Zine"
+  short_description: "Create accurate excerpt cards with passage-derived visual styles"
+  default_prompt: "Use $book-excerpt-share-zine to analyze this passage's entities, actions, time, senses, argument, and verified source evidence; report the evidence map, source status, and selected style/layout/palette, then create a trustworthy GC Minimal Zine card with exact deterministic text."

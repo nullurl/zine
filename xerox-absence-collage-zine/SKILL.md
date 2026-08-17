@@ -1,6 +1,6 @@
 ---
 name: 复印缺席
-description: Generate prompts and finished raster images for poetic xerox nature collages with source-palette preservation, overlapping landscape photographs, botanical negatives, blurred birds, anonymous portrait and eye fragments, typewriter poetry, exposed tape, paper seams, cobalt light blooms, forest green plates, cold violet inserts, and weathered photocopy grain. Use when the user supplies a theme, poem, memory, landscape, flower, bird, person, or reference image and wants a color-faithful analog literary collage about absence, forgetting, distance, migration, or traces rather than a decorative scrapbook.
+description: "【复印缺席 / xerox-absence-collage-zine】 Generate prompts and finished raster images for poetic xerox nature collages with source-palette preservation, overlapping landscape photographs, botanical negatives, blurred birds, anonymous portrait and eye fragments, typewriter poetry, exposed tape, paper seams, cobalt light blooms, forest green plates, cold violet inserts, and weathered photocopy grain. Use when the user supplies a theme, poem, memory, landscape, flower, bird, person, or reference image and wants a color-faithful analog literary collage about absence, forgetting, distance, migration, or traces rather than a decorative scrapbook."
 ---
 
 # Xerox Absence Collage Zine

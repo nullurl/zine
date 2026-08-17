@@ -1,6 +1,6 @@
 ---
 name: 水墨笔势
-description: Generate prompts and finished raster images for abstract ink gesture posters, brush-swish studies, minimal paper-space compositions, and accent-dot editorial sheets. Use when the user provides a theme, phrase, feeling, reference image, or abstract brief and wants a tall white-paper poster with one dominant ink gesture, huge negative space, soft scan texture, and a single restrained accent color.
+description: "【水墨笔势 / ink-gesture-poster-zine】 Generate prompts and finished raster images for abstract ink gesture posters, brush-swish studies, minimal paper-space compositions, and accent-dot editorial sheets. Use when the user provides a theme, phrase, feeling, reference image, or abstract brief and wants a tall white-paper poster with one dominant ink gesture, huge negative space, soft scan texture, and a single restrained accent color."
 ---
 
 # Ink Gesture Poster Zine

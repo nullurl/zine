@@ -1,0 +1,4 @@
+interface:
+  display_name: "Molly Rube Luxury Studio Zine"
+  short_description: "Dark luxury studio brand system posters"
+  default_prompt: "Use $molly-rube-luxury-studio-zine to turn my studio or personal brand into a dark luxury editorial identity poster."

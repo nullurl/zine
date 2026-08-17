@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chromatic Ghost Print Zine"
+  short_description: "RGB glitch zine poster prompt compiler"
+  default_prompt: "Use $chromatic-ghost-print-zine to turn this photo or theme into a chromatic ghost-print zine image."

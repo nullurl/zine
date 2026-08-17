@@ -1,0 +1,4 @@
+interface:
+  display_name: "Black Notebook Dispatch Zine"
+  short_description: "Monochrome open-notebook dispatch posters"
+  default_prompt: "Use $black-notebook-dispatch-zine to turn my theme into a monochrome open-notebook dispatch collage poster."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gathered Memory Collage"
+  short_description: "Quiet torn-paper photo collage zines"
+  default_prompt: "Use $gathered-memory-collage-zine to turn this photo into a quiet torn-paper memory collage zine."

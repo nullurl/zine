@@ -1,6 +1,6 @@
 ---
 name: 半透明节目单
-description: Generate prompts and finished raster images for translucent, type-heavy program posters, experimental event flyers, album/tracklist sheets, design-study posters, calendar-map zines, and misty low-contrast editorial compositions. Use when the user provides a phrase, event, music/program brief, poster reference, date, photo, figure, landscape, or abstract concept and wants a vertical poster with black outer field, pale paper panel, oversized translucent typography, blurred photo fragments, ghost diagrams, small program metadata, scan grain, and Minimal Zine restraint.
+description: "【半透明节目单 / translucent-program-poster-zine】 Generate prompts and finished raster images for translucent, type-heavy program posters, experimental event flyers, album/tracklist sheets, design-study posters, calendar-map zines, and misty low-contrast editorial compositions. Use when the user provides a phrase, event, music/program brief, poster reference, date, photo, figure, landscape, or abstract concept and wants a vertical poster with black outer field, pale paper panel, oversized translucent typography, blurred photo fragments, ghost diagrams, small program metadata, scan grain, and Minimal Zine restraint."
 ---
 
 # Translucent Program Poster Zine

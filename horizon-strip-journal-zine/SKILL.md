@@ -1,6 +1,6 @@
 ---
 name: 地平线日记
-description: Generate prompts and finished raster images for hand-drawn landscape journal zines that combine 4-6 rounded panoramic photo strips with pencil sketches, ink marks, watercolor notes, small captions, and Minimal Zine paper-poster discipline. Use when the user provides a place, weather, memory, sentence, object, or reference image and wants a quiet handmade field diary rather than a dense scrapbook.
+description: "【地平线日记 / horizon-strip-journal-zine】 Generate prompts and finished raster images for hand-drawn landscape journal zines that combine 4-6 rounded panoramic photo strips with pencil sketches, ink marks, watercolor notes, small captions, and Minimal Zine paper-poster discipline. Use when the user provides a place, weather, memory, sentence, object, or reference image and wants a quiet handmade field diary rather than a dense scrapbook."
 ---
 
 # Horizon Strip Journal Zine

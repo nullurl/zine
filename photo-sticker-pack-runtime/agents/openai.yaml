@@ -1,0 +1,4 @@
+interface:
+  display_name: "照片贴图生成器"
+  short_description: "一键生成八张可换色贴图，并可选放到 Mac 桌面"
+  default_prompt: "使用 $photo-sticker-pack 将我上传的照片一键生成八张可换色贴图。"

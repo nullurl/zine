@@ -1,6 +1,6 @@
 ---
 name: 日常叠影
-description: Generate prompts and finished raster images for layered everyday lifestyle photo collages, window-cafe memory boards, room-and-table moodboards, fan-object diary spreads, botanical drink snapshots, and soft overlay zines. Use when the user provides a place, room, cafe, flower, drink, toy, book, character-merch mood, daily memory, reference image, or phrase and wants a horizontal or portrait photo collage with one blurred/full-scene background, many rectangular photo tiles, white wireframe overlays, arrows, tiny icons, scattered poetic text, muted natural color, and Minimal Zine restraint.
+description: "【日常叠影 / everyday-overlay-photo-zine】 Generate prompts and finished raster images for layered everyday lifestyle photo collages, window-cafe memory boards, room-and-table moodboards, fan-object diary spreads, botanical drink snapshots, and soft overlay zines. Use when the user provides a place, room, cafe, flower, drink, toy, book, character-merch mood, daily memory, reference image, or phrase and wants a horizontal or portrait photo collage with one blurred/full-scene background, many rectangular photo tiles, white wireframe overlays, arrows, tiny icons, scattered poetic text, muted natural color, and Minimal Zine restraint."
 ---
 
 # Everyday Overlay Photo Zine

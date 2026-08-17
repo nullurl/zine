@@ -1,6 +1,6 @@
 ---
 name: 水墨纹身
-description: Generate prompts and finished raster images for monochrome sumi-e gesture tattoos, black-ink animal and botanical tattoo specimens, and dark editorial body-placement portraits. Use when the user supplies a motif, animal, plant, phrase, body location, or reference images and wants expressive brush tattoos with a dominant anatomical gesture, ink wash, dry-brush fracture, orbit filaments, large negative space, optional restrained red or cobalt accent, textured-paper artwork, or believable tattoo placement on an arm, shoulder, back, waist, collarbone, or thigh.
+description: "【水墨纹身 / sumi-gesture-tattoo-zine】 Generate prompts and finished raster images for monochrome sumi-e gesture tattoos, black-ink animal and botanical tattoo specimens, and dark editorial body-placement portraits. Use when the user supplies a motif, animal, plant, phrase, body location, or reference images and wants expressive brush tattoos with a dominant anatomical gesture, ink wash, dry-brush fracture, orbit filaments, large negative space, optional restrained red or cobalt accent, textured-paper artwork, or believable tattoo placement on an arm, shoulder, back, waist, collarbone, or thigh."
 ---
 
 # Sumi Gesture Tattoo Zine

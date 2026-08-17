@@ -1,0 +1,4 @@
+interface:
+  display_name: "Luminous Storybook Landscape"
+  short_description: "Painterly fantasy landscape prompt compiler"
+  default_prompt: "Use $luminous-storybook-landscape to turn this theme into a luminous painterly storybook landscape."

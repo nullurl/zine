@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quiet Torn Paper Memory Zine"
+  short_description: "Sparse torn-photo paper memory prompts"
+  default_prompt: "Use $quiet-torn-paper-memory-zine to turn this photo or theme into a quiet torn-paper memory zine image."

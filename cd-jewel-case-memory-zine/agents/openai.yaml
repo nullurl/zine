@@ -1,0 +1,4 @@
+interface:
+  display_name: "CD Album Photo Mockup"
+  short_description: "Turn photos into Japanese CD mockups"
+  default_prompt: "Use $cd-jewel-case-memory-zine to turn my uploaded photo into a clean Japanese CD album mockup."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Earth Ink Poem Poster"
+  short_description: "Weathered calligraphy poetry posters"
+  default_prompt: "Use $earth-ink-poem-poster to turn this poem or reference into a weathered calligraphy poetry poster."

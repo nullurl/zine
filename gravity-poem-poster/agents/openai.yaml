@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gravity Poem Poster"
+  short_description: "Minimal poetry layouts with weighted type"
+  default_prompt: "Use $gravity-poem-poster to turn this poem or reference into a sparse gravity-based poetry poster."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Botanical Paper Collage Zine"
+  short_description: "Botanical photo and paper-texture collage prompts"
+  default_prompt: "Use $botanical-paper-collage-zine to turn my theme into a muted botanical paper collage poster."

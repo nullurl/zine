@@ -1,0 +1,4 @@
+interface:
+  display_name: "GC Minimal Zine Poster v0.2"
+  short_description: "Poetic zine posters with richer visual directions"
+  default_prompt: "Use $gc-minimal-zine-poster-v0-2 to create a poetic poster about autumn migration."

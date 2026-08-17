@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dream Valley Poem Poster"
+  short_description: "Surreal floral landscape poetry posters"
+  default_prompt: "Use $dream-valley-poem-poster to turn this poem or reference into a surreal floral landscape poetry poster."

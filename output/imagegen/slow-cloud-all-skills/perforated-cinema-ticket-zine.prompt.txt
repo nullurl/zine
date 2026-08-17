@@ -1,7 +1,0 @@
-Black void poster with one dominant white punch-ticket card and scalloped perforations. Turn the reference into a cinema-ticket program card: the blue sky and building become a high-contrast illustration panel, and the tiny airplane becomes a dramatic film-detail mark.
-
-Use a large main ticket with metadata rows below, plus a narrow repeat stub if needed. Make the image feel collectible, retro, and slightly uncanny, as if the quote {QUOTE} were a film title.
-
-Title can be 云游 or 慢云片单, with bold serif or slab-serif type and one optional warm accent only. Keep the ticket punch edges and monochrome base unmistakable.
-
-Halftone grain, die-cut feel, and black-void contrast; avoid glossy ad render, UI cards, or a flat white poster.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sacred Garden Overlay Zine"
+  short_description: "Mystic garden, temple, and water-overlay zines"
+  default_prompt: "Use $sacred-garden-overlay-zine to turn my theme into a dark luminous garden and temple overlay poster."

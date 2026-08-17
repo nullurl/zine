@@ -1,0 +1,42 @@
+{
+  "_说明": "替换 brand.primary 即可，衍生色 hover/active/disabled/bg 按注释规则调整",
+  "brand": {
+    "primary":          { "value": "#1677FF", "usage": "主按钮、链接、选中态、焦点边框" },
+    "primary-hover":    { "value": "#4096FF", "usage": "悬停态，比主色亮 15%" },
+    "primary-active":   { "value": "#0958D9", "usage": "点击态，比主色深 15%" },
+    "primary-disabled": { "value": "#91CAFF", "usage": "禁用态，透明度 40%" },
+    "primary-bg":       { "value": "#E6F4FF", "usage": "主色浅背景，选中行、激活容器" }
+  },
+  "functional": {
+    "success":    { "value": "#52C41A", "usage": "成功、通过、完成、启用" },
+    "success-bg": { "value": "#F6FFED", "usage": "成功状态背景" },
+    "warning":    { "value": "#FAAD14", "usage": "警告、待处理、注意" },
+    "warning-bg": { "value": "#FFFBE6", "usage": "警告状态背景" },
+    "error":      { "value": "#FF4D4F", "usage": "错误、失败、拒绝、删除" },
+    "error-bg":   { "value": "#FFF2F0", "usage": "错误状态背景" },
+    "info":       { "value": "#1677FF", "usage": "信息提示" },
+    "info-bg":    { "value": "#E6F4FF", "usage": "信息状态背景" }
+  },
+  "text": {
+    "primary":   { "value": "#1F1F1F", "usage": "标题、重要信息、主文案" },
+    "secondary": { "value": "#595959", "usage": "正文、次要信息" },
+    "tertiary":  { "value": "#8C8C8C", "usage": "辅助文字、placeholder、说明" },
+    "disabled":  { "value": "#BFBFBF", "usage": "禁用态文字" },
+    "inverse":   { "value": "#FFFFFF", "usage": "深色背景上的文字" },
+    "link":      { "value": "#1677FF", "usage": "链接文字" }
+  },
+  "background": {
+    "page":     { "value": "#F5F5F5", "usage": "页面底色" },
+    "card":     { "value": "#FFFFFF", "usage": "卡片、面板、表格背景" },
+    "hover":    { "value": "#F0F0F0", "usage": "列表行 hover、菜单项 hover" },
+    "selected": { "value": "#E6F4FF", "usage": "选中行、激活菜单项" },
+    "disabled": { "value": "#F5F5F5", "usage": "禁用态输入框背景" },
+    "mask":     { "value": "rgba(0,0,0,0.45)", "usage": "弹窗遮罩" }
+  },
+  "border": {
+    "default": { "value": "#D9D9D9", "usage": "输入框、卡片、分割线" },
+    "strong":  { "value": "#BFBFBF", "usage": "强调边框" },
+    "focus":   { "value": "#1677FF", "usage": "聚焦态边框" },
+    "error":   { "value": "#FF4D4F", "usage": "错误态边框" }
+  }
+}

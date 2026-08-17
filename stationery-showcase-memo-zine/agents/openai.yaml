@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stationery Showcase Memo Zine"
+  short_description: "Pastel stationery display memo posters"
+  default_prompt: "Use $stationery-showcase-memo-zine to turn my theme into a pastel stationery showcase memo poster."

@@ -1,6 +1,6 @@
 ---
 name: 影像诗迹
-description: Generate prompts and finished raster images for dual-panel photo and line-trace poetry zines. Use when the user provides a theme, place, object, memory, Chinese sentence, city scene, garden view, lake, bridge, animal, flower, night light, travel photo, or reference images and wants a vertical poster with a colored matte-paper upper panel, pale line drawing traced from the subject, centered Chinese poetic title and date, and a lower photographic panel fused with Minimal Zine negative-space discipline.
+description: "【影像诗迹 / photo-trace-poetry-zine】 Generate prompts and finished raster images for dual-panel photo and line-trace poetry zines. Use when the user provides a theme, place, object, memory, Chinese sentence, city scene, garden view, lake, bridge, animal, flower, night light, travel photo, or reference images and wants a vertical poster with a colored matte-paper upper panel, pale line drawing traced from the subject, centered Chinese poetic title and date, and a lower photographic panel fused with Minimal Zine negative-space discipline."
 ---
 
 # Photo Trace Poetry Zine

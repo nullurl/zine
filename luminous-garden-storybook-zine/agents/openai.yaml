@@ -1,0 +1,4 @@
+interface:
+  display_name: "Luminous Garden Storybook Zine"
+  short_description: "Generate luminous painterly garden storybook scenes"
+  default_prompt: "Use $luminous-garden-storybook-zine to create a glowing painterly garden scene."

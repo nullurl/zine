@@ -1,6 +1,6 @@
 ---
 name: 牛皮纸编辑
-description: Generate prompts and finished raster images for translucent vellum editorial zines, quiet portfolio covers, photography dossiers, architecture lookbooks, café menus, fashion mood pages, wedding image sheets, material studies, and layered paper poster compositions. Use when the user provides a theme, photograph, studio idea, place, object, or reference set and wants a portrait composition with one main image, offset white paper, semi-transparent tracing-paper overlays, a binder clip, restrained editorial typography, low contrast, and one muted color accent.
+description: "【牛皮纸编辑 / vellum-editorial-zine】 Generate prompts and finished raster images for translucent vellum editorial zines, quiet portfolio covers, photography dossiers, architecture lookbooks, café menus, fashion mood pages, wedding image sheets, material studies, and layered paper poster compositions. Use when the user provides a theme, photograph, studio idea, place, object, or reference set and wants a portrait composition with one main image, offset white paper, semi-transparent tracing-paper overlays, a binder clip, restrained editorial typography, low contrast, and one muted color accent."
 ---
 
 # Vellum Editorial Zine

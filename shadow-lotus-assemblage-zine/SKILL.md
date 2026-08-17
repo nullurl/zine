@@ -1,6 +1,6 @@
 ---
 name: 影荷拼合
-description: "Generate prompts and finished raster images for dark devotional Buddha-and-lotus assemblage zines. Use when the user provides a theme, phrase, memory, reference image, scripture-like line, botanical subject, statue, shrine, meditation mood, or abstract poster brief and wants a layered black/olive collage poster with oversized grayscale sculpture, lotus or leaf materials, translucent paper/vellum overlays, vertical Chinese calligraphy, seal marks, smoke or gold traces, and Minimal Zine-style controlled composition."
+description: "【影荷拼合 / shadow-lotus-assemblage-zine】 Generate prompts and finished raster images for dark devotional Buddha-and-lotus assemblage zines. Use when the user provides a theme, phrase, memory, reference image, scripture-like line, botanical subject, statue, shrine, meditation mood, or abstract poster brief and wants a layered black/olive collage poster with oversized grayscale sculpture, lotus or leaf materials, translucent paper/vellum overlays, vertical Chinese calligraphy, seal marks, smoke or gold traces, and Minimal Zine-style controlled composition."
 ---
 
 # Shadow Lotus Assemblage Zine

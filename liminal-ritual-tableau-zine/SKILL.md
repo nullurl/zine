@@ -1,6 +1,6 @@
 ---
 name: 阈限仪式
-description: Generate prompts and finished raster images for pale surreal ritual tableau posters, liminal fashion photographs, symbolic triptychs, mirror-and-water scenes, and restrained occult-editorial zines. Use when the user provides a theme, phrase, poem, person, landscape, or reference image and wants white garments, portals, smoke, fire, reflections, eclipse forms, specimen grids, or uncanny ceremonial imagery arranged with sparse Minimal Zine discipline.
+description: "【阈限仪式 / liminal-ritual-tableau-zine】 Generate prompts and finished raster images for pale surreal ritual tableau posters, liminal fashion photographs, symbolic triptychs, mirror-and-water scenes, and restrained occult-editorial zines. Use when the user provides a theme, phrase, poem, person, landscape, or reference image and wants white garments, portals, smoke, fire, reflections, eclipse forms, specimen grids, or uncanny ceremonial imagery arranged with sparse Minimal Zine discipline."
 ---
 
 # Liminal Ritual Tableau Zine

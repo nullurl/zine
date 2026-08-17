@@ -1,6 +1,6 @@
 ---
 name: 地平线回忆
-description: Generate prompts and finished raster images for vertical memory zines built from rounded horizontal landscape strips. Use when the user provides a theme, place, weather, sentence, or reference image and wants cloud studies, moonlit horizons, rural scenery, gardens, roads, utility lines, animals, or quiet time-sequenced photographs arranged as a clean contact-sheet poster with white gutters, soft film color, and restrained Minimal Zine composition.
+description: "【地平线回忆 / horizon-strip-memory-zine】 Generate prompts and finished raster images for vertical memory zines built from rounded horizontal landscape strips. Use when the user provides a theme, place, weather, sentence, or reference image and wants cloud studies, moonlit horizons, rural scenery, gardens, roads, utility lines, animals, or quiet time-sequenced photographs arranged as a clean contact-sheet poster with white gutters, soft film color, and restrained Minimal Zine composition."
 ---
 
 # Horizon Strip Memory Zine

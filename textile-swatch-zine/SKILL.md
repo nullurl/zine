@@ -1,6 +1,6 @@
 ---
 name: 织物样本
-description: Generate prompts and finished raster images for tactile textile and material swatch zines, fabric sample boards, yarn studies, paper or leather archives, dye tests, woven structure ledgers, and quiet bespoke material dossiers. Use when the user provides a theme, place, season, product-free material direction, reference image, or mood and wants a vertical fibrous-paper composition with a 2x3 or 3x2 grid of translucent frosted sample cards, real textile swatches, tiny labels, generous blank space, soft scan lighting, one controlled color accent, or explicit preservation of a reference image's original color palette.
+description: "【织物样本 / textile-swatch-zine】 Generate prompts and finished raster images for tactile textile and material swatch zines, fabric sample boards, yarn studies, paper or leather archives, dye tests, woven structure ledgers, and quiet bespoke material dossiers. Use when the user provides a theme, place, season, product-free material direction, reference image, or mood and wants a vertical fibrous-paper composition with a 2x3 or 3x2 grid of translucent frosted sample cards, real textile swatches, tiny labels, generous blank space, soft scan lighting, one controlled color accent, or explicit preservation of a reference image's original color palette."
 ---
 
 # Textile Swatch Zine v0.2

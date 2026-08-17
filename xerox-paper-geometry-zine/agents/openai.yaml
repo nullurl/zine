@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xerox Paper Geometry Zine"
+  short_description: "Sparse xerox-photo geometry zine prompts"
+  default_prompt: "Use $xerox-paper-geometry-zine to turn this photo or theme into a sparse xerox-paper geometry zine image."

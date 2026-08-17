@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canopy Poem Poster"
+  short_description: "Watercolor canopy-framed poetry layouts"
+  default_prompt: "Use $canopy-poem-poster to turn this poem or reference into a sparse canopy-framed poetry poster."

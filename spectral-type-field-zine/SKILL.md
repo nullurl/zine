@@ -1,6 +1,6 @@
 ---
 name: 光谱字体
-description: Generate prompts and finished raster images for pale experimental typography posters with ghosted photographs, soft blur, xerox grain, translucent text layers, distorted display type, program or tracklist microtext, sparse diagrams, and restrained signal colors. Use when the user provides a theme, event, album, exhibition, program, phrase, body study, or reference image and wants an atmospheric editorial flyer rather than a dense commercial event poster.
+description: "【光谱字体 / spectral-type-field-zine】 Generate prompts and finished raster images for pale experimental typography posters with ghosted photographs, soft blur, xerox grain, translucent text layers, distorted display type, program or tracklist microtext, sparse diagrams, and restrained signal colors. Use when the user provides a theme, event, album, exhibition, program, phrase, body study, or reference image and wants an atmospheric editorial flyer rather than a dense commercial event poster."
 ---
 
 # Spectral Type Field Zine

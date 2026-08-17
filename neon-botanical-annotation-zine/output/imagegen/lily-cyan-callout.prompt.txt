@@ -1,0 +1,5 @@
+Dark underexposed botanical photo, a single large lily bloom in sharp focus against deep shadowed garden foliage; soft film grain, slight lens softness, low contrast. Flower first, annotations second.
+
+Layout: flower-callout. A thin white rectangular frame outlines the flower; a cyan arrow line points to the stamen with a small magenta numbered circle "03"; three dotted grid markers trace the petal edge; a white pixel flower icon floats nearby; small script label "LILIUM" in cyan cursive at lower-right; one magenta color chip square.
+
+Neon accent pair: cyan + magenta only. No long text, no UI dashboard, no bright background. Mood: poetic dark botanical field note with early-digital graphic overlay.

@@ -1,0 +1,17 @@
+{
+  "font-family": "PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif",
+  "scale": {
+    "page-title":   { "size": "20px", "line-height": "28px", "weight": "600", "usage": "页面主标题，每页仅一个" },
+    "module-title": { "size": "16px", "line-height": "24px", "weight": "600", "usage": "卡片标题、模块标题" },
+    "body":         { "size": "14px", "line-height": "22px", "weight": "400", "usage": "标准正文，最高频" },
+    "caption":      { "size": "12px", "line-height": "20px", "weight": "400", "usage": "辅助说明、标签、时间戳" },
+    "table-header": { "size": "14px", "line-height": "22px", "weight": "500", "usage": "表格表头" },
+    "label":        { "size": "12px", "line-height": "20px", "weight": "400", "usage": "表单 Label" }
+  },
+  "rules": {
+    "min-size": "12px",
+    "heading-weight": "600",
+    "body-weight": "400",
+    "emphasis-weight": "500"
+  }
+}

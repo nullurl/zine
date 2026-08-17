@@ -1,6 +1,6 @@
 ---
 name: 旅途票据
-description: Generate prompts and finished raster images for rounded travel-memory ticket cards, city photo pass cards, diary ticket grids, location archive cards, and soft souvenir photo zines. Use when the user provides a place, trip, season, daily memory, reference photo, photo set, mood, or short phrase and wants a vertical card with a large rounded photo window, solid color ticket-stub information panel, semicircle bottom notch, barcode-like marks, bold place typography, date/index microcopy, soft shadows, muted palette, or a 3x3 collection of coordinated memory cards. Also use when the user asks to fuse gc-minimal-zine-poster negative space with photo-ticket or barcode-card visual structure.
+description: "【旅途票据 / travel-ticket-memory-zine】 Generate prompts and finished raster images for rounded travel-memory ticket cards, city photo pass cards, diary ticket grids, location archive cards, and soft souvenir photo zines. Use when the user provides a place, trip, season, daily memory, reference photo, photo set, mood, or short phrase and wants a vertical card with a large rounded photo window, solid color ticket-stub information panel, semicircle bottom notch, barcode-like marks, bold place typography, date/index microcopy, soft shadows, muted palette, or a 3x3 collection of coordinated memory cards. Also use when the user asks to fuse gc-minimal-zine-poster negative space with photo-ticket or barcode-card visual structure."
 ---
 
 # Travel Ticket Memory Zine

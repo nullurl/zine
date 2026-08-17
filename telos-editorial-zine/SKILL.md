@@ -1,6 +1,6 @@
 ---
 name: 终极编辑
-description: Generate sparse monochrome editorial zine posters and matching prompts/images. Use when the user wants a white-field concept cover, thesis-like poster, minimal paper layout, tiny grayscale anchor, conceptual title or numbering, or a quiet editorial composition from a theme, sentence, object, memory, or reference image.
+description: "【终极编辑 / telos-editorial-zine】 Generate sparse monochrome editorial zine posters and matching prompts/images. Use when the user wants a white-field concept cover, thesis-like poster, minimal paper layout, tiny grayscale anchor, conceptual title or numbering, or a quiet editorial composition from a theme, sentence, object, memory, or reference image."
 ---
 
 # Telos Editorial Zine

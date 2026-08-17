@@ -1,6 +1,6 @@
 ---
 name: 纹身转印
-description: Generate prompts and finished raster images for poetic tattoo transfer showcase sheets, temporary tattoo sticker catalog pages, body-placement mockups, and delicate tattoo design presentation zines. Use when the user provides a theme, phrase, motif, reference image, tattoo idea, botanical/animal/ink symbol, color brief, hand-placement request, multilingual copy, or product-style request and wants a refined sheet with a soft anatomically believable skin-placement photo, isolated tattoo artwork, expressive hand-drawn linework, reference-derived multicolor transfer ink, abstract accents, sparse typography, handmade print texture, and minimal zine negative space.
+description: "【纹身转印 / tattoo-transfer-showcase-zine】 Generate prompts and finished raster images for poetic tattoo transfer showcase sheets, temporary tattoo sticker catalog pages, body-placement mockups, and delicate tattoo design presentation zines. Use when the user provides a theme, phrase, motif, reference image, tattoo idea, botanical/animal/ink symbol, color brief, hand-placement request, multilingual copy, or product-style request and wants a refined sheet with a soft anatomically believable skin-placement photo, isolated tattoo artwork, expressive hand-drawn linework, reference-derived multicolor transfer ink, abstract accents, sparse typography, handmade print texture, and minimal zine negative space."
 ---
 
 # Tattoo Transfer Showcase Zine

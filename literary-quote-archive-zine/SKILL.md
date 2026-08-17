@@ -1,6 +1,6 @@
 ---
 name: 文学语录
-description: Generate prompts and finished raster images for quiet literary quote archive posters with aged cream paper, editorial serif typography, italic outline keywords, short highlighted quote lines, numbered metadata, torn photographic or illustrated collage anchors, and one restrained accent color. Use when the user provides a quote, poem fragment, author, book, sentence, theme, or reference image and wants a typographic zine poster rather than a generic social quote card.
+description: "【文学语录 / literary-quote-archive-zine】 Generate prompts and finished raster images for quiet literary quote archive posters with aged cream paper, editorial serif typography, italic outline keywords, short highlighted quote lines, numbered metadata, torn photographic or illustrated collage anchors, and one restrained accent color. Use when the user provides a quote, poem fragment, author, book, sentence, theme, or reference image and wants a typographic zine poster rather than a generic social quote card."
 ---
 
 # Literary Quote Archive Zine

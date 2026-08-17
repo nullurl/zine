@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cobalt Breath Quote Zine"
+  short_description: "Create cobalt duotone quote and poetry zines"
+  default_prompt: "Use $cobalt-breath-quote-zine, select and report one canonical layout ID, and turn this text into a sparse warm-paper zine with one organic cobalt duotone metaphor vignette."

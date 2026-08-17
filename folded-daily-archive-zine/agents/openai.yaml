@@ -1,0 +1,4 @@
+interface:
+  display_name: "Folded Daily Archive Zine"
+  short_description: "Folded-paper daily archive posters"
+  default_prompt: "Use $folded-daily-archive-zine to turn my theme into a folded-paper daily archive poster."

@@ -1,6 +1,6 @@
 ---
 name: 花艺编辑
-description: Generate prompts and finished raster images for minimalist floral-studio editorial posters, botanical identity sheets, letterpress plant studies, monogram-led flower pages, and sparse type-driven botanical compositions. Use when the user provides flowers, plants, botanical references, floral branding cues, a reference image, or a short phrase and wants a vertical paper poster with antique type, ghost botanical illustration, cool off-white or sky-blue paper, and a calm Minimal Zine fusion.
+description: "【花艺编辑 / floral-studio-editorial-zine】 Generate prompts and finished raster images for minimalist floral-studio editorial posters, botanical identity sheets, letterpress plant studies, monogram-led flower pages, and sparse type-driven botanical compositions. Use when the user provides flowers, plants, botanical references, floral branding cues, a reference image, or a short phrase and wants a vertical paper poster with antique type, ghost botanical illustration, cool off-white or sky-blue paper, and a calm Minimal Zine fusion."
 ---
 
 # Floral Studio Editorial Zine

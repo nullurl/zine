@@ -1,0 +1,4 @@
+interface:
+  display_name: "Floating Polaroid Memory"
+  short_description: "Centered instant-photo memory zines"
+  default_prompt: "Use $floating-polaroid-memory-zine to turn this photo into a centered floating polaroid memory zine."

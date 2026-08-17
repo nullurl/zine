@@ -1,6 +1,6 @@
 ---
 name: 艺术废纸
-description: Generate prompts and finished raster images for tactile art-trash junk journals, reclaimed-material scrapbook pages, altered-book collages, mossy mixed-media boards, discarded-object diaries, outsider craft zines, and maximal handmade ephemera compositions. Use when the user provides a theme, mood, reference image, memory, place, object, or keyword such as art trash, junk journal, found materials, altered book, recycled collage, moss collage, old newspaper, cheap beads, dried flowers, glue texture, toy-like miniatures, or messy handmade journal, especially when they want this fused with Minimal Zine paper discipline, controlled negative space, short type, and a generated bitmap image.
+description: "【艺术废纸 / art-trash-journal-zine】 Generate prompts and finished raster images for tactile art-trash junk journals, reclaimed-material scrapbook pages, altered-book collages, mossy mixed-media boards, discarded-object diaries, outsider craft zines, and maximal handmade ephemera compositions. Use when the user provides a theme, mood, reference image, memory, place, object, or keyword such as art trash, junk journal, found materials, altered book, recycled collage, moss collage, old newspaper, cheap beads, dried flowers, glue texture, toy-like miniatures, or messy handmade journal, especially when they want this fused with Minimal Zine paper discipline, controlled negative space, short type, and a generated bitmap image."
 ---
 
 # Art Trash Journal Zine

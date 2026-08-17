@@ -1,6 +1,6 @@
 ---
 name: 分析诗学海报
-description: Generate prompts and finished raster images for sparse analytical diagram zines and poetic poster studies. Use when the user provides a short phrase, thought, memory, poem, observation, time/space concept, reference image, or diagram-like brief and wants a huge cream-paper or off-white field, one small analytical cluster, thin axis lines, arrows, coordinates, scientific labels, a poetic Chinese note, restrained blue/red/gold accents, paper grain, and a generated bitmap image.
+description: "【分析诗学海报 / analytical-skyline-poetry-zine】 Generate prompts and finished raster images for sparse analytical diagram zines and poetic poster studies. Use when the user provides a short phrase, thought, memory, poem, observation, time/space concept, reference image, or diagram-like brief and wants a huge cream-paper or off-white field, one small analytical cluster, thin axis lines, arrows, coordinates, scientific labels, a poetic Chinese note, restrained blue/red/gold accents, paper grain, and a generated bitmap image."
 ---
 
 # Analytical Skyline Poetry Zine

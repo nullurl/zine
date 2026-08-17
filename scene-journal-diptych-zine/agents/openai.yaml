@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scene Journal Diptych Zine"
+  short_description: "Turn places and vivid human moments into journal collages"
+  default_prompt: "Use $scene-journal-diptych-zine to build a vivid place or life-force portrait scene, then extract its elements into a sparse tactile journal collage."

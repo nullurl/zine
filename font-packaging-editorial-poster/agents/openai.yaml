@@ -1,0 +1,4 @@
+interface:
+  display_name: "Font Packaging Editorial Poster"
+  short_description: "Type-dense bilingual promo poster prompts"
+  default_prompt: "Use $font-packaging-editorial-poster to turn this theme or image into a type-dense bilingual promotional poster."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Textile Swatch Zine v0.3"
+  short_description: "Create tactile swatch boards with soft label geometry"
+  default_prompt: "Use $textile-swatch-zine-v0-3 to turn this material theme or reference image into a finished high-key tactile swatch-board image with soft label geometry."

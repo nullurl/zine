@@ -1,6 +1,6 @@
 ---
 name: 撕光档案
-description: Generate torn-paper archival light collage poster prompts and matching raster images. Use when the user provides a theme, place, season, memory, night scene, city/river/snow/window/light subject, or reference images and wants a vertical handmade editorial poster with deckled gray paper, irregular torn photo fragments, vellum layers, blueprint linework, botanical traces, typewriter microtext, and quiet poetic atmosphere.
+description: "【撕光档案 / torn-light-archive-poster】 Generate torn-paper archival light collage poster prompts and matching raster images. Use when the user provides a theme, place, season, memory, night scene, city/river/snow/window/light subject, or reference images and wants a vertical handmade editorial poster with deckled gray paper, irregular torn photo fragments, vellum layers, blueprint linework, botanical traces, typewriter microtext, and quiet poetic atmosphere."
 ---
 
 # Torn Light Archive Poster

@@ -1,0 +1,11 @@
+Horizontal 16:10 collage on a dark-green garden background with warm sun patches filtering through leaves, soft depth blur, muted olive and cream palette with golden light flecks.
+
+Layout family: garden-light-collage. About nine overlapping photo tiles drifting across the scene — yellow flowers, a green drink with mint, an open book on grass, a small white plush bunny, a butterfly-like mark, two sunlight-patch snaps, and a wooden chair; tiles tilt slightly with shallow shadows.
+
+Subject thread: one garden afternoon — primary object is the yellow flower cluster; supporting tiles are the mint drink, book, plush bunny, and sunlight from the same garden walk.
+
+White overlay system: thin white corner frames on four tiles, a small white arrow toward the flower, a teardrop icon and two tiny leaf glyphs, faint dashed line connecting the drink and book; delicate line weight.
+
+Typography: one short fragment "memories take you back" in pale serif near the top, a small vertical note in Chinese beside the flower tile; sparse, soft white on dark green.
+
+Texture and mood: gentle photo grain, sunlight softness, personal diary collage with Minimal Zine restraint; avoid rigid grid, app UI, commercial ad, copied text, neon, and glossy rendering.

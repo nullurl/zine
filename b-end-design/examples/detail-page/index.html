@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>详情页模板</title>
+<style>
+:root{
+  --brand-primary:#1677FF;--brand-primary-hover:#4096FF;--brand-primary-bg:#E6F4FF;
+  --func-success:#52C41A;--func-success-bg:#F6FFED;--func-warning:#FAAD14;--func-warning-bg:#FFFBE6;
+  --func-error:#FF4D4F;--func-error-bg:#FFF2F0;--func-info:#1677FF;--func-info-bg:#E6F4FF;
+  --text-primary:#1F1F1F;--text-secondary:#595959;--text-tertiary:#8C8C8C;
+  --bg-page:#F5F5F5;--bg-card:#FFFFFF;--bg-hover:#F0F0F0;
+  --border-default:#D9D9D9;
+  --font:'PingFang SC','Microsoft YaHei',sans-serif;
+  --radius-md:4px;--radius-lg:8px;
+  --shadow-sm:0 1px 2px rgba(0,0,0,0.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);font-size:14px;color:var(--text-primary);background:var(--bg-page);min-height:100vh}
+.nav{height:56px;background:var(--bg-card);border-bottom:1px solid var(--border-default);display:flex;align-items:center;padding:0 24px;gap:12px;box-shadow:var(--shadow-sm);position:sticky;top:0;z-index:100}
+.nav-logo{font-size:15px;font-weight:600;color:var(--brand-primary)}
+.nav-sep{width:1px;height:18px;background:var(--border-default)}
+.nav-sub{font-size:13px;color:var(--text-secondary)}
+.nav-avatar{margin-left:auto;width:30px;height:30px;border-radius:50%;background:var(--brand-primary);color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.content{max-width:960px;margin:0 auto;padding:24px}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-tertiary);margin-bottom:14px}
+.breadcrumb a{color:var(--text-tertiary);cursor:pointer;text-decoration:none}
+.breadcrumb a:hover{color:var(--brand-primary)}
+/* 页头 */
+.page-header{background:var(--bg-card);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:16px;box-shadow:var(--shadow-sm);display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.header-left{display:flex;flex-direction:column;gap:10px}
+.header-title-row{display:flex;align-items:center;gap:10px}
+.page-title{font-size:20px;font-weight:600}
+.order-no{font-size:14px;color:var(--text-tertiary);font-weight:400}
+.tag{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:2px;font-size:12px;font-weight:500}
+.tag-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.tag-success{background:var(--func-success-bg);color:var(--func-success)}.tag-success .tag-dot{background:var(--func-success)}
+.tag-warning{background:var(--func-warning-bg);color:var(--func-warning)}.tag-warning .tag-dot{background:var(--func-warning)}
+.tag-error{background:var(--func-error-bg);color:var(--func-error)}.tag-error .tag-dot{background:var(--func-error)}
+.tag-info{background:var(--func-info-bg);color:var(--func-info)}.tag-info .tag-dot{background:var(--func-info)}
+.tag-default{background:#F5F5F5;color:var(--text-tertiary)}.tag-default .tag-dot{background:var(--text-tertiary)}
+.header-meta{display:flex;align-items:center;gap:16px;font-size:12px;color:var(--text-tertiary)}
+.meta-item{display:flex;align-items:center;gap:4px}
+.header-actions{display:flex;gap:8px;flex-shrink:0;align-items:flex-start}
+.btn{height:32px;padding:0 14px;border-radius:var(--radius-md);font-size:13px;font-family:var(--font);cursor:pointer;transition:all .15s;display:inline-flex;align-items:center;gap:5px;border:1px solid transparent;white-space:nowrap}
+.btn-primary{background:var(--brand-primary);color:#fff;border-color:var(--brand-primary)}
+.btn-primary:hover{background:var(--brand-primary-hover);border-color:var(--brand-primary-hover)}
+.btn-default{background:var(--bg-card);color:var(--text-primary);border-color:var(--border-default)}
+.btn-default:hover{color:var(--brand-primary);border-color:var(--brand-primary);background:var(--brand-primary-bg)}
+.btn-danger{background:var(--func-error-bg);color:var(--func-error);border-color:var(--func-error)}
+.btn-danger:hover{background:var(--func-error);color:#fff}
+/* 卡片 */
+.card{background:var(--bg-card);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:16px;box-shadow:var(--shadow-sm)}
+.card-title{font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.card-bar{width:3px;height:14px;background:var(--brand-primary);border-radius:2px;flex-shrink:0}
+/* 信息网格 */
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 24px}
+.info-item{display:flex;flex-direction:column;gap:4px}
+.info-label{font-size:12px;color:var(--text-tertiary)}
+.info-value{font-size:14px;color:var(--text-primary);font-weight:500}
+.info-value.link{color:var(--brand-primary);cursor:pointer}
+.info-value.link:hover{text-decoration:underline}
+.info-full{grid-column:1/-1}
+/* 金额高亮 */
+.amount{font-size:22px;font-weight:700;color:var(--text-primary)}
+.amount-unit{font-size:14px;font-weight:400;color:var(--text-secondary)}
+/* 头像 */
+.user-cell{display:flex;align-items:center;gap:8px}
+.avatar{width:24px;height:24px;border-radius:50%;color:#fff;font-size:10px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+/* Tab */
+.tab-nav{display:flex;border-bottom:1px solid var(--border-default);margin-bottom:16px}
+.tab-item{padding:10px 16px;font-size:13px;color:var(--text-secondary);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s;white-space:nowrap}
+.tab-item:hover{color:var(--brand-primary)}
+.tab-item.active{color:var(--brand-primary);border-bottom-color:var(--brand-primary);font-weight:500}
+.tab-panel{display:none}
+.tab-panel.active{display:block}
+/* 时间轴 */
+.timeline{display:flex;flex-direction:column;gap:0}
+.tl-item{display:flex;gap:14px;padding-bottom:20px;position:relative}
+.tl-item:last-child{padding-bottom:0}
+.tl-left{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
+.tl-dot{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;z-index:1;flex-shrink:0}
+.tl-dot.success{background:var(--func-success-bg);color:var(--func-success);border:2px solid var(--func-success)}
+.tl-dot.active{background:var(--brand-primary);color:#fff;box-shadow:0 0 0 3px var(--brand-primary-bg)}
+.tl-dot.pending{background:var(--bg-page);color:var(--text-tertiary);border:2px solid var(--border-default)}
+.tl-line{width:2px;background:var(--border-default);flex:1;margin:4px 0}
+.tl-line.done{background:var(--func-success)}
+.tl-item:last-child .tl-line{display:none}
+.tl-right{flex:1;padding-top:4px}
+.tl-title{font-size:13px;font-weight:500;color:var(--text-primary);margin-bottom:3px}
+.tl-title.pending{color:var(--text-tertiary);font-weight:400}
+.tl-meta{font-size:12px;color:var(--text-tertiary);margin-bottom:6px}
+.tl-comment{font-size:12px;color:var(--text-secondary);background:#F8F9FA;border-radius:var(--radius-md);padding:8px 10px;border-left:3px solid var(--border-default)}
+/* 文件列表 */
+.file-list{display:flex;flex-direction:column;gap:8px}
+.file-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--border-default);border-radius:var(--radius-md);transition:all .15s}
+.file-item:hover{border-color:var(--brand-primary);background:var(--brand-primary-bg)}
+.file-icon{width:32px;height:32px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.file-icon.pdf{background:#FFF2F0;color:var(--func-error)}
+.file-icon.word{background:#E6F4FF;color:var(--brand-primary)}
+.file-icon.excel{background:#F6FFED;color:var(--func-success)}
+.file-name{font-size:13px;color:var(--text-primary);font-weight:500;flex:1}
+.file-size{font-size:12px;color:var(--text-tertiary)}
+.file-btn{height:26px;padding:0 10px;border-radius:var(--radius-md);font-size:12px;font-family:var(--font);cursor:pointer;border:1px solid var(--border-default);background:var(--bg-card);color:var(--text-secondary);transition:all .15s}
+.file-btn:hover{border-color:var(--brand-primary);color:var(--brand-primary);background:var(--brand-primary-bg)}
+/* 确认弹窗 */
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:200;align-items:center;justify-content:center}
+.overlay.show{display:flex}
+.modal{background:var(--bg-card);border-radius:12px;padding:28px 24px;box-shadow:0 8px 24px rgba(0,0,0,.15);animation:popIn .25s ease;width:360px}
+@keyframes popIn{from{transform:scale(.9);opacity:0}to{transform:scale(1);opacity:1}}
+.modal-title{font-size:16px;font-weight:600;margin-bottom:8px}
+.modal-desc{font-size:13px;color:var(--text-secondary);margin-bottom:20px;line-height:1.6}
+.modal-btns{display:flex;justify-content:flex-end;gap:8px}
+</style>
+</head>
+<body>
+<div class="nav">
+  <div class="nav-logo">管理后台</div>
+  <div class="nav-sep"></div>
+  <div class="nav-sub">B端 Skill — 详情页模板</div>
+  <div class="nav-avatar">张</div>
+</div>
+<div class="content">
+  <div class="breadcrumb"><a>首页</a> / <a>订单管理</a> / <span style="color:var(--text-secondary)">订单详情</span></div>
+
+  <!-- 页头 -->
+  <div class="page-header">
+    <div class="header-left">
+      <div class="header-title-row">
+        <div class="page-title">订单详情</div>
+        <div class="order-no">#ORD-20240101</div>
+        <span class="tag tag-warning"><span class="tag-dot"></span>审批中</span>
+      </div>
+      <div class="header-meta">
+        <div class="meta-item">创建人：张三</div>
+        <div class="meta-item">创建时间：2024-01-01 09:30</div>
+        <div class="meta-item">最后更新：2024-01-02 14:20</div>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="btn btn-default" onclick="document.getElementById('cancelOverlay').classList.add('show')">撤销申请</button>
+      <button class="btn btn-default">编辑</button>
+      <button class="btn btn-primary">催办</button>
+    </div>
+  </div>
+
+  <!-- 基本信息 -->
+  <div class="card">
+    <div class="card-title"><div class="card-bar"></div>基本信息</div>
+    <div class="info-grid">
+      <div class="info-item">
+        <div class="info-label">客户名称</div>
+        <div class="info-value link">皓月设计公司</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">联系人</div>
+        <div class="info-value">李总</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">联系电话</div>
+        <div class="info-value">138****8888</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">订单类型</div>
+        <div class="info-value">标准采购</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">负责人</div>
+        <div class="info-value"><div class="user-cell"><div class="avatar" style="background:#52C41A">李</div>李四</div></div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">优先级</div>
+        <div class="info-value"><span class="tag tag-warning"><span class="tag-dot"></span>中</span></div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">合同金额</div>
+        <div class="info-value"><span class="amount">128,000</span><span class="amount-unit"> 元</span></div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">预计交付</div>
+        <div class="info-value">2024-03-31</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">服务项目</div>
+        <div class="info-value">系统开发、数据迁移、文档交付</div>
+      </div>
+      <div class="info-item info-full">
+        <div class="info-label">订单说明</div>
+        <div class="info-value" style="font-weight:400;color:var(--text-secondary);line-height:1.6">本次订单为皓月设计公司采购 B 端管理系统，包含用户权限、数据报表及移动端适配模块，要求 2024 年 Q1 完成交付验收。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 关联信息 Tab -->
+  <div class="card">
+    <div class="card-title"><div class="card-bar"></div>关联信息</div>
+    <div class="tab-nav">
+      <div class="tab-item active" onclick="switchTab(this,'tab-flow')">审批流程</div>
+      <div class="tab-item" onclick="switchTab(this,'tab-files')">相关附件</div>
+      <div class="tab-item" onclick="switchTab(this,'tab-log')">操作日志</div>
+    </div>
+
+    <!-- Tab1：审批流程 -->
+    <div class="tab-panel active" id="tab-flow">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-left">
+            <div class="tl-dot success">&#10003;</div>
+            <div class="tl-line done"></div>
+          </div>
+          <div class="tl-right">
+            <div class="tl-title">发起申请</div>
+            <div class="tl-meta"><div class="user-cell" style="display:inline-flex"><div class="avatar" style="background:#1677FF;width:18px;height:18px;font-size:9px">张</div>&nbsp;张三</div> &nbsp; 2024-01-01 09:30</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-left">
+            <div class="tl-dot success">&#10003;</div>
+            <div class="tl-line done"></div>
+          </div>
+          <div class="tl-right">
+            <div class="tl-title">部门审批</div>
+            <div class="tl-meta"><div class="user-cell" style="display:inline-flex"><div class="avatar" style="background:#52C41A;width:18px;height:18px;font-size:9px">李</div>&nbsp;李四（已通过）</div> &nbsp; 2024-01-01 14:20</div>
+            <div class="tl-comment">同意，资料完整，请继续流转。</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-left">
+            <div class="tl-dot active">3</div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-right">
+            <div class="tl-title">主管审批 <span style="font-size:11px;background:var(--func-warning-bg);color:var(--func-warning);padding:1px 6px;border-radius:2px;font-weight:400;margin-left:4px">当前节点</span></div>
+            <div class="tl-meta"><div class="user-cell" style="display:inline-flex"><div class="avatar" style="background:#722ED1;width:18px;height:18px;font-size:9px">王</div>&nbsp;王五（待审批）</div></div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-left">
+            <div class="tl-dot pending">4</div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-right">
+            <div class="tl-title pending">财务审批</div>
+            <div class="tl-meta">赵六（待处理）</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-left">
+            <div class="tl-dot pending">5</div>
+          </div>
+          <div class="tl-right">
+            <div class="tl-title pending">总经理审批</div>
+            <div class="tl-meta">陈总（待处理）</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab2：相关附件 -->
+    <div class="tab-panel" id="tab-files">
+      <div class="file-list">
+        <div class="file-item">
+          <div class="file-icon pdf">PDF</div>
+          <div>
+            <div class="file-name">皓月设计公司采购合同_v2.pdf</div>
+            <div class="file-size">2.3 MB &nbsp;·&nbsp; 2024-01-01 上传</div>
+          </div>
+          <button class="file-btn">下载</button>
+          <button class="file-btn">预览</button>
+        </div>
+        <div class="file-item">
+          <div class="file-icon word">DOC</div>
+          <div>
+            <div class="file-name">需求说明书_皓月设计.docx</div>
+            <div class="file-size">856 KB &nbsp;·&nbsp; 2024-01-01 上传</div>
+          </div>
+          <button class="file-btn">下载</button>
+          <button class="file-btn">预览</button>
+        </div>
+        <div class="file-item">
+          <div class="file-icon excel">XLS</div>
+          <div>
+            <div class="file-name">报价清单_2024Q1.xlsx</div>
+            <div class="file-size">124 KB &nbsp;·&nbsp; 2024-01-02 上传</div>
+          </div>
+          <button class="file-btn">下载</button>
+          <button class="file-btn">预览</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab3：操作日志 -->
+    <div class="tab-panel" id="tab-log">
+      <div style="display:flex;flex-direction:column;gap:0">
+        <div style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #F5F5F5">
+          <div style="font-size:12px;color:var(--text-tertiary);width:130px;flex-shrink:0">2024-01-02 14:20</div>
+          <div style="font-size:13px;color:var(--text-secondary)"><span style="color:var(--text-primary);font-weight:500">李四</span> 审批通过，意见：同意，资料完整，请继续流转。</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #F5F5F5">
+          <div style="font-size:12px;color:var(--text-tertiary);width:130px;flex-shrink:0">2024-01-01 14:05</div>
+          <div style="font-size:13px;color:var(--text-secondary)"><span style="color:var(--text-primary);font-weight:500">系统</span> 流转至部门审批节点，审批人：李四</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid #F5F5F5">
+          <div style="font-size:12px;color:var(--text-tertiary);width:130px;flex-shrink:0">2024-01-01 10:20</div>
+          <div style="font-size:13px;color:var(--text-secondary)"><span style="color:var(--text-primary);font-weight:500">张三</span> 补充上传附件：报价清单_2024Q1.xlsx</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:12px;padding:10px 0">
+          <div style="font-size:12px;color:var(--text-tertiary);width:130px;flex-shrink:0">2024-01-01 09:30</div>
+          <div style="font-size:13px;color:var(--text-secondary)"><span style="color:var(--text-primary);font-weight:500">张三</span> 创建订单并发起审批</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 撤销确认弹窗 -->
+<div class="overlay" id="cancelOverlay">
+  <div class="modal">
+    <div class="modal-title">确认撤销申请？</div>
+    <div class="modal-desc">撤销后订单将回到草稿状态，已完成的审批节点将被清空，需重新发起审批流程。</div>
+    <div class="modal-btns">
+      <button class="btn btn-default" onclick="document.getElementById('cancelOverlay').classList.remove('show')">再想想</button>
+      <button class="btn btn-danger" onclick="document.getElementById('cancelOverlay').classList.remove('show')">确认撤销</button>
+    </div>
+  </div>
+</div>
+
+<script>
+function switchTab(el,panelId){
+  document.querySelectorAll('.tab-item').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById(panelId).classList.add('active');
+}
+</script>
+</body>
+</html>

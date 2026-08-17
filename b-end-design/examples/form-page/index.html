@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>表单页模板</title>
+<style>
+:root{
+  --brand-primary:#1677FF;--brand-primary-hover:#4096FF;--brand-primary-active:#0958D9;--brand-primary-bg:#E6F4FF;
+  --func-success:#52C41A;--func-error:#FF4D4F;--func-error-bg:#FFF2F0;--func-warning:#FAAD14;
+  --text-primary:#1F1F1F;--text-secondary:#595959;--text-tertiary:#8C8C8C;--text-disabled:#BFBFBF;
+  --bg-page:#F5F5F5;--bg-card:#FFFFFF;--bg-hover:#F0F0F0;--bg-disabled:#F5F5F5;
+  --border-default:#D9D9D9;--border-focus:#1677FF;--border-error:#FF4D4F;
+  --font:'PingFang SC','Microsoft YaHei',sans-serif;
+  --radius-md:4px;--radius-lg:8px;--radius-xl:16px;
+  --shadow-sm:0 1px 2px rgba(0,0,0,0.06);--shadow-footer:0 -2px 8px rgba(0,0,0,0.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);font-size:14px;color:var(--text-primary);background:var(--bg-page);min-height:100vh;display:flex;flex-direction:column}
+.nav{height:56px;background:var(--bg-card);border-bottom:1px solid var(--border-default);display:flex;align-items:center;padding:0 24px;gap:12px;box-shadow:var(--shadow-sm);position:sticky;top:0;z-index:100;flex-shrink:0}
+.nav-logo{font-size:15px;font-weight:600;color:var(--brand-primary)}
+.nav-sep{width:1px;height:18px;background:var(--border-default)}
+.nav-sub{font-size:13px;color:var(--text-secondary)}
+.nav-avatar{margin-left:auto;width:30px;height:30px;border-radius:50%;background:var(--brand-primary);color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.main{flex:1;padding:24px;padding-bottom:80px;max-width:860px;margin:0 auto;width:100%}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-tertiary);margin-bottom:14px}
+.breadcrumb a{color:var(--text-tertiary);cursor:pointer;text-decoration:none}
+.breadcrumb a:hover{color:var(--brand-primary)}
+/* 步骤条 */
+.steps{display:flex;align-items:center;background:var(--bg-card);border-radius:var(--radius-lg);padding:18px 28px;margin-bottom:16px;box-shadow:var(--shadow-sm)}
+.step{display:flex;align-items:center;gap:10px;flex:1}
+.step-circle{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;flex-shrink:0;transition:all .2s}
+.step.done .step-circle{background:var(--brand-primary);color:#fff}
+.step.active .step-circle{background:var(--brand-primary);color:#fff;box-shadow:0 0 0 3px var(--brand-primary-bg)}
+.step.pending .step-circle{background:var(--bg-page);color:var(--text-tertiary);border:1px solid var(--border-default)}
+.step-label{font-size:13px;font-weight:500;color:var(--text-primary)}
+.step.pending .step-label{color:var(--text-tertiary)}
+.step-desc{font-size:11px;color:var(--text-tertiary);margin-top:1px}
+.step-line{flex:1;height:1px;background:var(--border-default);margin:0 8px;max-width:72px}
+.step-line.done{background:var(--brand-primary)}
+/* 卡片 */
+.card{background:var(--bg-card);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:16px;box-shadow:var(--shadow-sm)}
+.card-title{font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid #F5F5F5;display:flex;align-items:center;gap:8px}
+.card-bar{width:3px;height:14px;background:var(--brand-primary);border-radius:2px;flex-shrink:0}
+/* 表单 */
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 24px}
+.form-full{grid-column:1/-1}
+.form-item{display:flex;flex-direction:column;gap:5px}
+.form-label{font-size:12px;color:var(--text-secondary);display:flex;align-items:center;gap:2px}
+.required{color:var(--func-error)}
+.input,.select,.textarea{font-family:var(--font);font-size:13px;color:var(--text-primary);background:var(--bg-card);border:1px solid var(--border-default);border-radius:var(--radius-md);outline:none;transition:all .2s;width:100%}
+.input,.select{height:34px;padding:0 10px}
+.textarea{padding:8px 10px;resize:vertical;min-height:80px;line-height:1.6}
+.input:focus,.select:focus,.textarea:focus{border-color:var(--border-focus);box-shadow:0 0 0 2px rgba(22,119,255,.1)}
+.input.err,.select.err,.textarea.err{border-color:var(--border-error);box-shadow:0 0 0 2px rgba(255,77,79,.1)}
+.input::placeholder,.textarea::placeholder{color:var(--text-tertiary)}
+.input:disabled,.select:disabled{background:var(--bg-disabled);color:var(--text-disabled);cursor:not-allowed}
+.select{appearance:none;padding-right:26px;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%238C8C8C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center}
+.form-err{font-size:11px;color:var(--func-error);margin-top:2px}
+.form-hint{font-size:11px;color:var(--text-tertiary)}
+.radio-group{display:flex;gap:20px;padding-top:4px}
+.radio-item{display:flex;align-items:center;gap:6px;cursor:pointer;font-size:13px;color:var(--text-secondary)}
+.radio-item input{accent-color:var(--brand-primary);width:14px;height:14px;cursor:pointer}
+.check-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
+.check-item{display:flex;align-items:center;gap:6px;cursor:pointer;font-size:13px;color:var(--text-secondary);padding:3px 0}
+.check-item input{accent-color:var(--brand-primary);width:14px;height:14px;cursor:pointer}
+.upload-area{border:1px dashed var(--border-default);border-radius:var(--radius-md);padding:18px;text-align:center;cursor:pointer;transition:all .2s;color:var(--text-tertiary);font-size:13px}
+.upload-area:hover{border-color:var(--brand-primary);background:var(--brand-primary-bg);color:var(--brand-primary)}
+.upload-hint{font-size:11px;margin-top:4px;color:var(--text-tertiary)}
+.textarea-wrap{position:relative}
+.char-count{position:absolute;right:8px;bottom:6px;font-size:11px;color:var(--text-tertiary);pointer-events:none}
+/* 底部操作栏 */
+.footer{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:flex-end;align-items:center;gap:10px;padding:10px 24px;background:var(--bg-card);border-top:1px solid #F0F0F0;box-shadow:var(--shadow-footer);z-index:99}
+.footer-tip{margin-right:auto;font-size:12px;color:var(--text-tertiary)}
+.btn{height:34px;padding:0 18px;border-radius:var(--radius-md);font-size:13px;font-family:var(--font);cursor:pointer;transition:all .15s;display:inline-flex;align-items:center;gap:5px;border:1px solid transparent}
+.btn-primary{background:var(--brand-primary);color:#fff;border-color:var(--brand-primary)}
+.btn-primary:hover{background:var(--brand-primary-hover);border-color:var(--brand-primary-hover)}
+.btn-default{background:var(--bg-card);color:var(--text-primary);border-color:var(--border-default)}
+.btn-default:hover{color:var(--brand-primary);border-color:var(--brand-primary);background:var(--brand-primary-bg)}
+/* 成功弹窗 */
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:200;align-items:center;justify-content:center}
+.overlay.show{display:flex}
+.modal{background:var(--bg-card);border-radius:var(--radius-xl);padding:36px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.15);animation:popIn .3s cubic-bezier(.34,1.56,.64,1);max-width:320px;width:90%}
+@keyframes popIn{from{transform:scale(.8);opacity:0}to{transform:scale(1);opacity:1}}
+.modal-icon{font-size:48px;margin-bottom:10px}
+.modal-title{font-size:17px;font-weight:600;margin-bottom:6px}
+.modal-desc{font-size:13px;color:var(--text-secondary);margin-bottom:20px}
+.modal-btn{width:100%;height:38px;background:var(--brand-primary);color:#fff;border:none;border-radius:var(--radius-md);font-size:14px;font-family:var(--font);cursor:pointer}
+.modal-btn:hover{background:var(--brand-primary-hover)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.spin{width:13px;height:13px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
+</style>
+</head>
+<body>
+<div class="nav">
+  <div class="nav-logo">管理后台</div>
+  <div class="nav-sep"></div>
+  <div class="nav-sub">B端 Skill — 表单页模板</div>
+  <div class="nav-avatar">张</div>
+</div>
+<div class="main">
+  <div class="breadcrumb"><a>首页</a> / <a>订单管理</a> / <span style="color:var(--text-secondary)">新建订单</span></div>
+  <div class="steps">
+    <div class="step done">
+      <div class="step-circle">&#10003;</div>
+      <div><div class="step-label">基本信息</div><div class="step-desc">已完成</div></div>
+    </div>
+    <div class="step-line done"></div>
+    <div class="step active">
+      <div class="step-circle">2</div>
+      <div><div class="step-label">订单详情</div><div class="step-desc">当前步骤</div></div>
+    </div>
+    <div class="step-line"></div>
+    <div class="step pending">
+      <div class="step-circle">3</div>
+      <div><div class="step-label">确认提交</div><div class="step-desc">待完成</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title"><div class="card-bar"></div>客户信息</div>
+    <div class="form-grid">
+      <div class="form-item">
+        <label class="form-label"><span class="required">*</span> 客户名称</label>
+        <input class="input" id="company" value="皓月设计公司" placeholder="请输入客户名称">
+      </div>
+      <div class="form-item">
+        <label class="form-label"><span class="required">*</span> 联系人</label>
+        <input class="input" id="contact" value="李总" placeholder="请输入联系人姓名">
+      </div>
+      <div class="form-item">
+        <label class="form-label"><span class="required">*</span> 联系电话</label>
+        <input class="input" id="phone" placeholder="请输入手机号">
+        <div class="form-err" id="phoneErr" style="display:none">手机号格式不正确</div>
+      </div>
+      <div class="form-item">
+        <label class="form-label">联系邮箱</label>
+        <input class="input" type="email" placeholder="请输入邮箱（选填）">
+        <div class="form-hint">用于接收订单通知</div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title"><div class="card-bar"></div>订单信息</div>
+    <div class="form-grid">
+      <div class="form-item">
+        <label class="form-label"><span class="required">*</span> 订单类型</label>
+        <select class="select" id="orderType">
+          <option value="">请选择</option>
+          <option value="1" selected>标准采购</option>
+          <option value="2">定制开发</option>
+          <option value="3">年度合同</option>
+        </select>
+      </div>
+      <div class="form-item">
+        <label class="form-label"><span class="required">*</span> 负责人</label>
+        <select class="select">
+          <option>请选择</option><option selected>李四</option><option>张三</option><option>王五</option>
+        </select>
+      </div>
+      <div class="form-item">
+        <label class="form-label"><span class="required">*</span> 合同金额（元）</label>
+        <input class="input" id="amount" type="number" placeholder="0.00" value="128000">
+      </div>
+      <div class="form-item">
+        <label class="form-label">预计交付日期</label>
+        <input class="input" type="date" value="2024-03-31">
+      </div>
+      <div class="form-item form-full">
+        <label class="form-label"><span class="required">*</span> 优先级</label>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="pri" value="low"> 低</label>
+          <label class="radio-item"><input type="radio" name="pri" value="mid" checked> 中</label>
+          <label class="radio-item"><input type="radio" name="pri" value="high"> 高</label>
+          <label class="radio-item"><input type="radio" name="pri" value="urgent"> 紧急</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title"><div class="card-bar"></div>详细信息</div>
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <div class="form-item">
+        <label class="form-label"><span class="required">*</span> 订单说明</label>
+        <div class="textarea-wrap">
+          <textarea class="textarea" id="desc" oninput="cnt(this,'cnt1',500)" placeholder="请描述订单需求、背景及特殊要求" style="min-height:88px">本次订单为皓月设计公司采购 B 端管理系统，包含用户权限、数据报表及移动端适配模块。</textarea>
+          <span class="char-count" id="cnt1">43/500</span>
+        </div>
+      </div>
+      <div class="form-item">
+        <label class="form-label">服务项目</label>
+        <div class="check-grid">
+          <label class="check-item"><input type="checkbox" checked> 系统开发</label>
+          <label class="check-item"><input type="checkbox" checked> 数据迁移</label>
+          <label class="check-item"><input type="checkbox"> 培训服务</label>
+          <label class="check-item"><input type="checkbox"> 运维支持</label>
+          <label class="check-item"><input type="checkbox" checked> 文档交付</label>
+          <label class="check-item"><input type="checkbox"> 二次开发</label>
+        </div>
+      </div>
+      <div class="form-item">
+        <label class="form-label">附件上传</label>
+        <div class="upload-area">
+          <div style="font-size:20px;margin-bottom:4px">+</div>
+          <div>点击或拖拽文件到此处上传</div>
+          <div class="upload-hint">支持 PDF、Word、Excel，单个不超过 10MB</div>
+        </div>
+      </div>
+      <div class="form-item">
+        <label class="form-label">备注</label>
+        <div class="textarea-wrap">
+          <textarea class="textarea" oninput="cnt(this,'cnt2',200)" placeholder="其他补充说明（选填）" style="min-height:64px"></textarea>
+          <span class="char-count" id="cnt2">0/200</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <span class="footer-tip">带 * 为必填项</span>
+  <button class="btn btn-default" onclick="handleCancel()">取消</button>
+  <button class="btn btn-default" onclick="handleDraft(this)">保存草稿</button>
+  <button class="btn btn-primary" id="submitBtn" onclick="handleSubmit()">提交订单</button>
+</div>
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <div class="modal-icon" style="color:var(--func-success)">&#10003;</div>
+    <div class="modal-title">提交成功</div>
+    <div class="modal-desc">订单 #ORD-20240106 已创建，负责人将在 1 个工作日内跟进。</div>
+    <button class="modal-btn" onclick="document.getElementById('overlay').classList.remove('show')">返回列表</button>
+  </div>
+</div>
+<script>
+function cnt(el,id,max){const l=el.value.length,e=document.getElementById(id);e.textContent=l+'/'+max;e.style.color=l>max*.9?'var(--func-warning)':'var(--text-tertiary)'}
+document.getElementById('cnt1').textContent=document.getElementById('desc').value.length+'/500';
+function validate(){
+  let ok=true;
+  const p=document.getElementById('phone'),pe=document.getElementById('phoneErr');
+  if(!p.value.trim()){p.classList.add('err');pe.style.display='block';pe.textContent='联系电话不能为空';ok=false}
+  else{p.classList.remove('err');pe.style.display='none'}
+  return ok;
+}
+function handleSubmit(){
+  if(!validate()){document.getElementById('phone').scrollIntoView({behavior:'smooth',block:'center'});return}
+  const b=document.getElementById('submitBtn');
+  b.innerHTML='<div class="spin"></div> 提交中...';b.disabled=true;
+  setTimeout(()=>{b.innerHTML='提交订单';b.disabled=false;document.getElementById('overlay').classList.add('show')},1800)
+}
+function handleDraft(b){const t=b.innerHTML;b.innerHTML='已保存';b.style.color='var(--func-success)';b.style.borderColor='var(--func-success)';setTimeout(()=>{b.innerHTML=t;b.style.color='';b.style.borderColor=''},2000)}
+function handleCancel(){if(confirm('确认放弃已填写的内容？'))alert('返回列表页')}
+</script>
+</body>
+</html>

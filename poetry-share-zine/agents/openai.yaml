@@ -1,0 +1,4 @@
+interface:
+  display_name: "Poetry Share Zine"
+  short_description: "Create image-aware poetry cards in diverse tactile zine styles"
+  default_prompt: "Use $poetry-share-zine to analyze this poem's entities, actions, time, senses, space, tension, and formal rhythm; report the image map and selected style/layout/palette, then create a readable GC Minimal Zine poster with exact deterministic typography and poem-derived imagery."

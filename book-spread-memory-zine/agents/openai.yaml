@@ -1,0 +1,4 @@
+interface:
+  display_name: "Book Spread Memory"
+  short_description: "Open-book collage zines with handwritten pages"
+  default_prompt: "Use $book-spread-memory-zine to turn these photos into an open-book memory spread zine."

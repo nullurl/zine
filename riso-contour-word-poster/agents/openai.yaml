@@ -1,0 +1,4 @@
+interface:
+  display_name: "Riso Contour Word Poster"
+  short_description: "Riso contour texture word-poster generator"
+  default_prompt: "Use $riso-contour-word-poster to turn my theme into a textured riso contour word poster."

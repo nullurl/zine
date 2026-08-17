@@ -1,0 +1,11 @@
+Horizontal 4:3 collage on a warm cafe-table background by a large window, soft daylight with gentle bokeh blur behind, muted milk-brown and cream palette, mild vignette and natural shadows.
+
+Layout family: window-cafe-board. About eight overlapping rectangular photo tiles scattered across the scene — a latte cup close-up, a small white flower in a vase, an open magazine page, a croissant, a window-light square, and two small snaps of chairs and plants; background stays dominant, tiles overlap with shallow natural shadows.
+
+Subject thread: one window cafe afternoon — primary object is the latte with heart latte-art; supporting tiles are the flower, magazine, croissant, and window light from the same table.
+
+White overlay system: thin white rectangular outline boxes around three tiles, a small white arrow pointing to the latte, a clover icon and two tiny stars, faint dotted connector line between tiles; line thickness is delicate, not UI-like.
+
+Typography: one short poetic fragment "ordinary light" in small serif at lower-right, a tiny vertical cursive note in Chinese near the flower tile; sparse, pale gray.
+
+Texture and mood: photo softness, light grain, personal diary collage; avoid rigid grid, app UI, commercial ad, copied text, neon, and glossy 3D.

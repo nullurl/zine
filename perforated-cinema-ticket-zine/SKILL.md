@@ -1,6 +1,6 @@
 ---
 name: 电影票根
-description: Generate prompts and finished raster images for perforated black-and-white cinema-ticket zines, playbill cards, and film-program posters. Use when the user provides a film title, play, dramatic theme, memory, reference image, or short brief and wants a black-void poster with a white punch-ticket card, die-cut scalloped edges, dense monochrome illustration, bilingual ticket metadata, an optional repeat strip, halftone grain, and a generated bitmap image.
+description: "【电影票根 / perforated-cinema-ticket-zine】 Generate prompts and finished raster images for perforated black-and-white cinema-ticket zines, playbill cards, and film-program posters. Use when the user provides a film title, play, dramatic theme, memory, reference image, or short brief and wants a black-void poster with a white punch-ticket card, die-cut scalloped edges, dense monochrome illustration, bilingual ticket metadata, an optional repeat strip, halftone grain, and a generated bitmap image."
 ---
 
 # Perforated Cinema Ticket Zine

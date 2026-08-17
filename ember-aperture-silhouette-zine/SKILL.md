@@ -1,6 +1,7 @@
 ---
 name: 余烬剪影
-description: Generate prompts and finished raster images for dark negative-space memory posters with one irregular warm aperture containing a limited-color sunset, moon, mountain, water, home, road, or human silhouette scene. Use when the user provides a phrase, relationship, place, memory, reference image, or emotional theme and wants a charcoal-black screenprint zine with burned-paper, cave-mouth, canopy, or torn-ink window geometry and tiny editorial typography.
+description: "【余烬剪影 / ember-aperture-silhouette-zine】 Generate prompts and finished raster images for dark negative-space memory posters with one irregular warm aperture containing a limited-color sunset, moon, mountain, water, home, road, or human silhouette scene. Use when the user provides a phrase, relationship, place, memory, reference image, or emotional theme and wants a charcoal-black screenprint zine with burned-paper, cave-mouth, canopy, or torn-ink window geometry and tiny editorial typography."
+version: 1.1.0
 ---
 
 # Ember Aperture Silhouette Zine

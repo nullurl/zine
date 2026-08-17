@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chinese Yanhuoqi Photo Story"
+  short_description: "Human Chinese street-life photo stories"
+  default_prompt: "Use $chinese-yanhuoqi-photo-story to generate five Chinese street-life images with captions."

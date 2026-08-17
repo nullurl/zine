@@ -1,6 +1,6 @@
 ---
 name: 织物样本V1
-description: "Generate original v0.1 textile and material swatch zine prompts and finished raster images. Use when the user wants the earlier tactile swatch-board style: vertical fibrous paper, 2x3 or 3x2 translucent frosted sample cards, real textile swatches, tiny labels, generous blank space, soft scan lighting, and one controlled color accent rather than broad reference-palette preservation."
+description: "【织物样本V1 / textile-swatch-zine-v0-1】 Generate original v0.1 textile and material swatch zine prompts and finished raster images. Use when the user wants the earlier tactile swatch-board style: vertical fibrous paper, 2x3 or 3x2 translucent frosted sample cards, real textile swatches, tiny labels, generous blank space, soft scan lighting, and one controlled color accent rather than broad reference-palette preservation."
 ---
 
 # Textile Swatch Zine v0.1

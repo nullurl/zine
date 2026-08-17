@@ -1,0 +1,4 @@
+interface:
+  display_name: "Photo Visual Echo Zine"
+  short_description: "照片转手绘视觉回声旅行海报生成器"
+  default_prompt: "Use $photo-visual-echo-zine to turn this travel photo into a photo plus illustrated visual echo zine poster."
