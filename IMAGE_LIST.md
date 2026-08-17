@@ -1,6 +1,6 @@
 # Zine Skills · 图片介绍
 
-> 85 个 AI 技能 · 170 张示例图
+> 87 个 AI 技能 · 174 张示例图
 
 ## 分析诗学海报
 `analytical-skyline-poetry-zine` · 2 张
@@ -1566,3 +1566,41 @@ whitepaper
 creampaper
 核心元素：圆形·方形·复印质感
 色调：奶白
+
+## 电影肖像胶片
+`cinema-portrait-film-zine` · 2 张
+
+### 图 1 — linen-golden-hour-portrait
+
+![linen-golden-hour-portrait](cinema-portrait-film-zine/output/imagegen/linen-golden-hour-portrait.png)
+
+核心元素：亚麻裙女子·金色时刻逆光·浅景深虚化·胶片颗粒
+色调：暖赭·鼠尾草绿·奶油白
+题字：「暖光逆影」
+
+### 图 2 — coat-street-winter-portrait
+
+![coat-street-winter-portrait](cinema-portrait-film-zine/output/imagegen/coat-street-winter-portrait.png)
+
+核心元素：羊毛大衣背影·冬日街巷·模拟颗粒·高反差
+色调：去饱和大地色·深黑·冷灰
+题字：「冬街背影」
+
+## 梦境花绽纱幕
+`dream-bloom-veil-zine` · 2 张
+
+### 图 1 — peony-mist-veil
+
+![peony-mist-veil](dream-bloom-veil-zine/output/imagegen/peony-mist-veil.png)
+
+核心元素：牡丹·晨雾纱幕·粉彩虚化·半透明纸纱
+色调：粉·奶油·暖雾
+题字：「雾里花」
+
+### 图 2 — hydrangea-condensation-veil
+
+![hydrangea-condensation-veil](dream-bloom-veil-zine/output/imagegen/hydrangea-condensation-veil.png)
+
+核心元素：绣球·冷凝水雾·紫色粉彩·晕染
+色调：薰衣草紫·粉蓝·淡鼠尾草
+题字：「湿雾绣球」

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dream Bloom Veil Zine"
+  short_description: "Dreamy botanical veil-overlay zine with misted pastel blooms"
+  default_prompt: "用 dream-bloom-veil-zine 做一张关于晨雾花园的图"

@@ -1,10 +1,10 @@
 # Zine Skills · 电子手帐创作系统
 
-> 85 个 AI 技能 · 170 张示例图
+> 87 个 AI 技能 · 174 张示例图
 
 工作区: `b86e35b0-6369-4449-ab37-fc0810d1822a`
 
-## Zine 图像生成 (80 个)
+## Zine 图像生成 (82 个)
 
 | # | 中文名 | 目录 | 图 | 说明 |
 |---|--------|------|:--:|------|
@@ -88,6 +88,8 @@
 | 78 | 风纱肖像 | `wind-veil-portrait-zine` | 2 | Generate prompts and finished raster images for wind-swept cinematic portrait zi |
 | 79 | 复印缺席 | `xerox-absence-collage-zine` | 2 | Generate prompts and finished raster images for poetic xerox nature collages wit |
 | 80 | 复印纸几何 | `xerox-paper-geometry-zine` | 2 | Generate sparse xerox-paper geometry zine prompts and matching raster images fro |
+| 81 | 电影肖像胶片 | `cinema-portrait-film-zine` | 2 | Generate prompts and finished raster images for cinematic real-person film port |
+| 82 | 梦境花绽纱幕 | `dream-bloom-veil-zine` | 2 | Generate prompts and finished raster images for dreamy botanical veil-overlay zi |
 
 ## 工具类 (5 个)
 
