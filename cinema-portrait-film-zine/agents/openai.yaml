@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cinema Portrait Film Zine"
+  short_description: "Real film portrait zine with Fuji and Ricoh camera feel"
+  default_prompt: "用 cinema-portrait-film-zine 做一张关于黄昏花园中的人像"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vinyl Memory Record Zine"
+  short_description: "Memory-to-vinyl album flatlay generator"
+  default_prompt: "Use $vinyl-memory-record-zine to turn my memory into a vinyl record package image."

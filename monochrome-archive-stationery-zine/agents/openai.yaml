@@ -1,0 +1,4 @@
+interface:
+  display_name: "Monochrome Archive Stationery Zine"
+  short_description: "Black-ground archival stationery zine boards"
+  default_prompt: "Use $monochrome-archive-stationery-zine to create a monochrome archival stationery zine board from my theme."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deckled Light Overlay Zine"
+  short_description: "Deckled paper photo-overlay posters"
+  default_prompt: "Use $deckled-light-overlay-zine to turn my theme into a deckled paper photo-overlay poster."

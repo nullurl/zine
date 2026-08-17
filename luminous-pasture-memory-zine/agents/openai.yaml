@@ -1,0 +1,4 @@
+interface:
+  display_name: "Luminous Pasture Memory Zine"
+  short_description: "Glowing nature-memory collage posters"
+  default_prompt: "Use $luminous-pasture-memory-zine to turn my theme into a glowing nature-memory collage poster."

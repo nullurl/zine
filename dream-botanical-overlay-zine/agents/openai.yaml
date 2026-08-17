@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dream Botanical Overlay Zine"
+  short_description: "Dreamy botanical double-exposure photo zines"
+  default_prompt: "Use $dream-botanical-overlay-zine to turn my theme into a dreamy botanical double-exposure poster."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Heritage Dessert Brand Zine"
+  short_description: "Warm Chinese dessert restaurant brand posters"
+  default_prompt: "Use $heritage-dessert-brand-zine to turn my dessert or restaurant concept into a warm heritage brand poster."

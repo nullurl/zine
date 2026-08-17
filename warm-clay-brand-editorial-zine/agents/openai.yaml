@@ -1,0 +1,4 @@
+interface:
+  display_name: "Warm Clay Brand Editorial Zine"
+  short_description: "Warm earth-tone brand editorial posters"
+  default_prompt: "Use $warm-clay-brand-editorial-zine to turn my theme into a warm earth-tone brand editorial poster."

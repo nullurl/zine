@@ -1,0 +1,4 @@
+interface:
+  display_name: "Handwritten Paper Note Zine"
+  short_description: "Handwritten sparse paper-note poster zines"
+  default_prompt: "Use $handwritten-paper-note-zine to create a quiet handwritten paper-note zine poster from my theme."
